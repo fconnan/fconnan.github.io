@@ -1,0 +1,132 @@
+#calendar {
+	overflow: auto;
+	white-space: nowrap;
+}
+
+.year {
+	padding: 3px;
+	margin: 2px;
+}
+
+.month {
+	padding: 3px;
+	margin: 2px;
+}
+
+.day {
+	display: inline-block;
+	border: 1px solid #dddddd;
+	padding: 3px;
+	margin: 1px;
+	min-width: 18px;
+	text-align: center;
+	background-position: center; 
+	background-size: cover;
+}
+
+.day_null {
+	background-color: #eeeeee;
+}
+
+.day_weekend {
+	box-shadow: inset 0 -3px #ddd;
+}
+
+@media not print {
+	.day_today {
+		background-color: #eeee00;
+	}
+}
+
+.day_public {
+	box-shadow: inset 0 -4px #f00;
+}
+
+.day_vacation {
+	box-shadow: inset 0 -4px #0a0;
+}
+
+.day_anniv {
+	box-shadow: inset 0 -4px #00f;
+	_background-image: url("birthday.png");
+	font-weight: bold;
+}
+
+.day_noel {
+	_background-image: url("sapin.png");
+	font-weight: bold;
+}
+
+.year_title {
+	font-size: 120%;
+	font-weight: bold;
+}
+
+.month_title {
+	display: inline-block;
+	min-width: 80px;
+}
+
+#fullscreen {
+    width: 100%;
+    height: 100%;
+    display: none;
+    position:fixed;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    background-color: rgba(0,0,0,.5); 
+}
+
+#fullscreen > div {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+#fullscreen.fullscreen-on {
+    display: block;
+}
+
+
+#fiche {
+	background-color: white;
+	border: 3px solid #aaa;
+	padding: 10px;
+	text-align: center;
+}
+
+#fiche .photo {
+	width: 200px;
+	height: 200px;
+	float: left;
+	margin-right: 1em;
+}
+
+#fiche .text {
+	float: left;
+}
+
+.nb_jours {
+	font-size: 5em;
+	color: red;
+	border: 1px solid red;
+	padding: 10px;
+	margin: 10px;
+	box-shadow: 5px 5px red;
+	min-width: 2em;
+}
+
+.span {
+	display: inline-block;
+}
+
+.age {
+	display: inline-block;
+	font-size: 2em;
+	font-weight: bold;
+	color: red;
+}

@@ -1,0 +1,134 @@
+/*
+	http://www.visibone.com/colorlab/
+*/
+body {
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-size: 12pt;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table.main {
+	border: 3px solid black;
+}
+
+
+table.main>tbody>tr>td {
+	border: 1px solid black;
+}
+
+table.main>tbody>tr.pm {
+	height: 12px;
+	_background-color: rgba(0,0,0,.3);
+}
+
+td {
+	text-align: center;
+	padding: 0px;
+}
+
+th {
+	border: 1px solid black;
+	background-color: rgb(230, 230, 230);
+	text-align: center;
+	font-weight: bold;
+}
+
+th:first-child {
+	border-right: 5px solid black;
+}
+
+table.main>tbody>tr:first-child {
+	border-bottom: 5px solid black;
+}
+
+table.main>tbody>tr, table.ab {
+	height: 3em;
+}
+
+th {
+	width: 8em;
+}
+
+table.ab {
+	width: 100%;
+}
+
+td.a {
+	border-bottom: 1px dashed black;
+	text-align: left;
+	padding-left: 5px;
+}
+
+td.b {
+	text-align: right;
+}
+
+td>div.add {
+	float: right;
+	padding-right: 5px;
+	padding-left: 5px;
+	margin-right: 2px;
+	margin-left: 5px;
+	_height: 100%;
+	background-color: rgba(255, 255, 255, .5);
+	border: 1px solid #aaa;
+}
+
+td.math {
+	background-color: rgb(146, 248, 255);
+}
+
+td.phy {
+	background-color: rgb(146, 230, 255);
+}
+
+td.techno {
+	background-color: rgb(146, 197, 255);
+}
+
+td.en {
+	background-color: rgb(255, 255, 153);
+}
+
+td.hi {
+	background-color: rgb(255, 255, 153);
+}
+
+td.litt {
+	background-color: rgb(255, 255, 153);
+}
+
+td.russe {
+	background-color: rgba(255,0,0,.3);
+}
+
+td.fr {
+	background-color: rgb(249, 199, 255);
+}
+
+td.hg {
+	background-color: rgb(253, 224, 153);
+}
+
+td.svt {
+	background-color: rgb(204, 255, 204);
+}
+
+td.eps {
+	background-color: rgb(186, 234, 186);
+}
+
+td.art {
+	background-color: rgb(186, 234, 186);
+}
+
+td.musique {
+	background-color: rgb(186, 234, 186);
+}
+
+td.vie {
+	background-color: rgb(186, 234, 186);
+}

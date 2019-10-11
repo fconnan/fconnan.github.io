@@ -1,0 +1,29 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>Dans combien de jours</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="index.css" rel="stylesheet" type="text/css" />
+<link href="../templates/standard/index.css" rel="stylesheet" type="text/css" />
+<link href="index.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+	C'est dans combien de jours ?
+	<div id="calendar"></div>
+	<div id="fullscreen">
+		<div id="fiche">
+			<h1 class="title">{{title}}</h1>
+			<img class="photo" fcx-src="{{img}}"></img>
+			<div class="text">
+				<div fc-if="{{age}}" class="span">
+					<div class="age">{{age}}</div> ans !
+				</div>
+				C'est dans
+				<div class="nb_jours">{{nb_jours}}</div>
+				jours.
+			</div>
+		</div>
+	</div>
+	<script src="index.js"></script>
+</body>
+</html>

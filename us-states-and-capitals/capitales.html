@@ -1,0 +1,2286 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="apple-itunes-app" content="app-id=1168940059">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+<script src="./files/jquery-2.0.0.min.js" type="text/javascript"></script>
+<link href="./files/pagestyles.css" rel="stylesheet" type="text/css">
+<link href="./files/svgMapStyles.css" rel="stylesheet">
+<script src="./files/jquery.cookie.js" type="text/javascript"></script>
+<script src="./files/jquery.disable.text.select.js" type="text/javascript"></script>
+<script src="./files/svg_game2.js" type="text/javascript"></script>
+
+<script type="application/javascript" src="./files/fastclick.js"></script>
+<script type="application/javascript">
+	
+        window.addEventListener('load', function () {
+            FastClick.attach(document.body);
+        }, false);
+    
+</script>
+
+<meta name="Description" content="États-Unis : les capitales des États - Quiz de géographie: Apprendre la géographie avec des jeux amusants.">
+<title>États-Unis : les capitales des États - Quiz de géographie</title>
+<style type="text/css">
+.fb_hidden {
+	position: absolute;
+	top: -10000px;
+	z-index: 10001
+}
+
+.fb_reposition {
+	overflow: hidden;
+	position: relative
+}
+
+.fb_invisible {
+	display: none
+}
+
+.fb_reset {
+	background: none;
+	border: 0;
+	border-spacing: 0;
+	color: #000;
+	cursor: auto;
+	direction: ltr;
+	font-family: "lucida grande", tahoma, verdana, arial, sans-serif;
+	font-size: 11px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	letter-spacing: normal;
+	line-height: 1;
+	margin: 0;
+	overflow: visible;
+	padding: 0;
+	text-align: left;
+	text-decoration: none;
+	text-indent: 0;
+	text-shadow: none;
+	text-transform: none;
+	visibility: visible;
+	white-space: normal;
+	word-spacing: normal
+}
+
+.fb_reset>div {
+	overflow: hidden
+}
+
+.fb_link img {
+	border: none
+}
+
+@
+keyframes fb_transform {
+	from {opacity: 0;
+	transform: scale(.95)
+}
+
+to {
+	opacity: 1;
+	transform: scale(1)
+}
+
+}
+.fb_animate {
+	animation: fb_transform .3s forwards
+}
+
+.fb_dialog {
+	background: rgba(82, 82, 82, .7);
+	position: absolute;
+	top: -10000px;
+	z-index: 10001
+}
+
+.fb_reset .fb_dialog_legacy {
+	overflow: visible
+}
+
+.fb_dialog_advanced {
+	padding: 10px;
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	border-radius: 8px
+}
+
+.fb_dialog_content {
+	background: #fff;
+	color: #333
+}
+
+.fb_dialog_close_icon {
+	background:
+		url(http://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png)
+		no-repeat scroll 0 0 transparent;
+	cursor: pointer;
+	display: block;
+	height: 15px;
+	position: absolute;
+	right: 18px;
+	top: 17px;
+	width: 15px
+}
+
+.fb_dialog_mobile .fb_dialog_close_icon {
+	top: 5px;
+	left: 5px;
+	right: auto
+}
+
+.fb_dialog_padding {
+	background-color: transparent;
+	position: absolute;
+	width: 1px;
+	z-index: -1
+}
+
+.fb_dialog_close_icon:hover {
+	background:
+		url(http://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png)
+		no-repeat scroll 0 -15px transparent
+}
+
+.fb_dialog_close_icon:active {
+	background:
+		url(http://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png)
+		no-repeat scroll 0 -30px transparent
+}
+
+.fb_dialog_loader {
+	background-color: #f6f7f9;
+	border: 1px solid #606060;
+	font-size: 24px;
+	padding: 20px
+}
+
+.fb_dialog_top_left, .fb_dialog_top_right, .fb_dialog_bottom_left,
+	.fb_dialog_bottom_right {
+	height: 10px;
+	width: 10px;
+	overflow: hidden;
+	position: absolute
+}
+
+.fb_dialog_top_left {
+	background:
+		url(http://static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png)
+		no-repeat 0 0;
+	left: -10px;
+	top: -10px
+}
+
+.fb_dialog_top_right {
+	background:
+		url(http://static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png)
+		no-repeat 0 -10px;
+	right: -10px;
+	top: -10px
+}
+
+.fb_dialog_bottom_left {
+	background:
+		url(http://static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png)
+		no-repeat 0 -20px;
+	bottom: -10px;
+	left: -10px
+}
+
+.fb_dialog_bottom_right {
+	background:
+		url(http://static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png)
+		no-repeat 0 -30px;
+	right: -10px;
+	bottom: -10px
+}
+
+.fb_dialog_vert_left, .fb_dialog_vert_right, .fb_dialog_horiz_top,
+	.fb_dialog_horiz_bottom {
+	position: absolute;
+	background: #525252;
+	filter: alpha(opacity = 70);
+	opacity: .7
+}
+
+.fb_dialog_vert_left, .fb_dialog_vert_right {
+	width: 10px;
+	height: 100%
+}
+
+.fb_dialog_vert_left {
+	margin-left: -10px
+}
+
+.fb_dialog_vert_right {
+	right: 0;
+	margin-right: -10px
+}
+
+.fb_dialog_horiz_top, .fb_dialog_horiz_bottom {
+	width: 100%;
+	height: 10px
+}
+
+.fb_dialog_horiz_top {
+	margin-top: -10px
+}
+
+.fb_dialog_horiz_bottom {
+	bottom: 0;
+	margin-bottom: -10px
+}
+
+.fb_dialog_iframe {
+	line-height: 0
+}
+
+.fb_dialog_content .dialog_title {
+	background: #6d84b4;
+	border: 1px solid #365899;
+	color: #fff;
+	font-size: 14px;
+	font-weight: bold;
+	margin: 0
+}
+
+.fb_dialog_content .dialog_title>span {
+	background:
+		url(http://static.xx.fbcdn.net/rsrc.php/v3/yd/r/Cou7n-nqK52.gif)
+		no-repeat 5px 50%;
+	float: left;
+	padding: 5px 0 7px 26px
+}
+
+body.fb_hidden {
+	-webkit-transform: none;
+	height: 100%;
+	margin: 0;
+	overflow: visible;
+	position: absolute;
+	top: -10000px;
+	left: 0;
+	width: 100%
+}
+
+.fb_dialog.fb_dialog_mobile.loading {
+	background:
+		url(http://static.xx.fbcdn.net/rsrc.php/v3/ya/r/3rhSv5V8j3o.gif) white
+		no-repeat 50% 50%;
+	min-height: 100%;
+	min-width: 100%;
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	z-index: 10001
+}
+
+.fb_dialog.fb_dialog_mobile.loading.centered {
+	width: auto;
+	height: auto;
+	min-height: initial;
+	min-width: initial;
+	background: none
+}
+
+.fb_dialog.fb_dialog_mobile.loading.centered #fb_dialog_loader_spinner {
+	width: 100%
+}
+
+.fb_dialog.fb_dialog_mobile.loading.centered .fb_dialog_content {
+	background: none
+}
+
+.loading.centered #fb_dialog_loader_close {
+	color: #fff;
+	display: block;
+	padding-top: 20px;
+	clear: both;
+	font-size: 18px
+}
+
+#fb-root #fb_dialog_ipad_overlay {
+	background: rgba(0, 0, 0, .45);
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	top: 0;
+	width: 100%;
+	min-height: 100%;
+	z-index: 10000
+}
+
+#fb-root #fb_dialog_ipad_overlay.hidden {
+	display: none
+}
+
+.fb_dialog.fb_dialog_mobile.loading iframe {
+	visibility: hidden
+}
+
+.fb_dialog_content .dialog_header {
+	-webkit-box-shadow: white 0 1px 1px -1px inset;
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#738ABA),
+		to(#2C4987));
+	border-bottom: 1px solid;
+	border-color: #1d4088;
+	color: #fff;
+	font: 14px Helvetica, sans-serif;
+	font-weight: bold;
+	text-overflow: ellipsis;
+	text-shadow: rgba(0, 30, 84, .296875) 0 -1px 0;
+	vertical-align: middle;
+	white-space: nowrap
+}
+
+.fb_dialog_content .dialog_header table {
+	-webkit-font-smoothing: subpixel-antialiased;
+	height: 43px;
+	width: 100%
+}
+
+.fb_dialog_content .dialog_header td.header_left {
+	font-size: 12px;
+	padding-left: 5px;
+	vertical-align: middle;
+	width: 60px
+}
+
+.fb_dialog_content .dialog_header td.header_right {
+	font-size: 12px;
+	padding-right: 5px;
+	vertical-align: middle;
+	width: 60px
+}
+
+.fb_dialog_content .touchable_button {
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#4966A6),
+		color-stop(.5, #355492), to(#2A4887));
+	border: 1px solid #29487d;
+	-webkit-background-clip: padding-box;
+	-webkit-border-radius: 3px;
+	-webkit-box-shadow: rgba(0, 0, 0, .117188) 0 1px 1px inset,
+		rgba(255, 255, 255, .167969) 0 1px 0;
+	display: inline-block;
+	margin-top: 3px;
+	max-width: 85px;
+	line-height: 18px;
+	padding: 4px 12px;
+	position: relative
+}
+
+.fb_dialog_content .dialog_header .touchable_button input {
+	border: none;
+	background: none;
+	color: #fff;
+	font: 12px Helvetica, sans-serif;
+	font-weight: bold;
+	margin: 2px -12px;
+	padding: 2px 6px 3px 6px;
+	text-shadow: rgba(0, 30, 84, .296875) 0 -1px 0
+}
+
+.fb_dialog_content .dialog_header .header_center {
+	color: #fff;
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 18px;
+	text-align: center;
+	vertical-align: middle
+}
+
+.fb_dialog_content .dialog_content {
+	background:
+		url(http://static.xx.fbcdn.net/rsrc.php/v3/y9/r/jKEcVPZFk-2.gif)
+		no-repeat 50% 50%;
+	border: 1px solid #555;
+	border-bottom: 0;
+	border-top: 0;
+	height: 150px
+}
+
+.fb_dialog_content .dialog_footer {
+	background: #f6f7f9;
+	border: 1px solid #555;
+	border-top-color: #ccc;
+	height: 40px
+}
+
+#fb_dialog_loader_close {
+	float: left
+}
+
+.fb_dialog.fb_dialog_mobile .fb_dialog_close_button {
+	text-shadow: rgba(0, 30, 84, .296875) 0 -1px 0
+}
+
+.fb_dialog.fb_dialog_mobile .fb_dialog_close_icon {
+	visibility: hidden
+}
+
+#fb_dialog_loader_spinner {
+	animation: rotateSpinner 1.2s linear infinite;
+	background-color: transparent;
+	background-image:
+		url(http://static.xx.fbcdn.net/rsrc.php/v3/yD/r/t-wz8gw1xG1.png);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	height: 24px;
+	width: 24px
+}
+
+@
+keyframes rotateSpinner { 0%{
+	transform: rotate(0deg)
+}
+
+100%{
+transform
+:rotate(360deg)
+}
+}
+.fb_iframe_widget {
+	display: inline-block;
+	position: relative
+}
+
+.fb_iframe_widget span {
+	display: inline-block;
+	position: relative;
+	text-align: justify
+}
+
+.fb_iframe_widget iframe {
+	position: absolute
+}
+
+.fb_iframe_widget_fluid_desktop, .fb_iframe_widget_fluid_desktop span,
+	.fb_iframe_widget_fluid_desktop iframe {
+	max-width: 100%
+}
+
+.fb_iframe_widget_fluid_desktop iframe {
+	min-width: 220px;
+	position: relative
+}
+
+.fb_iframe_widget_lift {
+	z-index: 1
+}
+
+.fb_hide_iframes iframe {
+	position: relative;
+	left: -10000px
+}
+
+.fb_iframe_widget_loader {
+	position: relative;
+	display: inline-block
+}
+
+.fb_iframe_widget_fluid {
+	display: inline
+}
+
+.fb_iframe_widget_fluid span {
+	width: 100%
+}
+
+.fb_iframe_widget_loader iframe {
+	min-height: 32px;
+	z-index: 2;
+	zoom: 1
+}
+
+.fb_iframe_widget_loader .FB_Loader {
+	background:
+		url(http://static.xx.fbcdn.net/rsrc.php/v3/y9/r/jKEcVPZFk-2.gif)
+		no-repeat;
+	height: 32px;
+	width: 32px;
+	margin-left: -16px;
+	position: absolute;
+	left: 50%;
+	z-index: 4
+}
+</style>
+<link type="text/css" href="./files/default.css" rel="stylesheet">
+<style type="text/css">
+.gsc-control-cse {
+	font-family: Arial, sans-serif;
+	border-color: #FFFFFF;
+	background-color: #FFFFFF;
+}
+
+.gsc-control-cse .gsc-table-result {
+	font-family: Arial, sans-serif;
+}
+
+input.gsc-input {
+	border-color: #BCCDF0;
+}
+
+input.gsc-search-button {
+	border-color: #336699;
+	background-color: #E9E9E9;
+}
+
+.gsc-tabHeader.gsc-tabhInactive {
+	border-color: #E9E9E9;
+	background-color: #E9E9E9;
+}
+
+.gsc-tabHeader.gsc-tabhActive {
+	border-top-color: #FF9900;
+	border-left-color: #E9E9E9;
+	border-right-color: #E9E9E9;
+	background-color: #FFFFFF;
+}
+
+.gsc-tabsArea {
+	border-color: #E9E9E9;
+}
+
+.gsc-webResult.gsc-result, .gsc-results .gsc-imageResult {
+	border-color: #FFFFFF;
+	background-color: #FFFFFF;
+}
+
+.gsc-webResult.gsc-result:hover, .gsc-imageResult:hover {
+	border-color: #FFFFFF;
+	background-color: #FFFFFF;
+}
+
+.gsc-webResult.gsc-result.gsc-promotion:hover {
+	border-color: #FFFFFF;
+	background-color: #FFFFFF;
+}
+
+.gs-webResult.gs-result a.gs-title:link, .gs-webResult.gs-result a.gs-title:link b,
+	.gs-imageResult a.gs-title:link, .gs-imageResult a.gs-title:link b {
+	color: #0000FF;
+}
+
+.gs-webResult.gs-result a.gs-title:visited, .gs-webResult.gs-result a.gs-title:visited b,
+	.gs-imageResult a.gs-title:visited, .gs-imageResult a.gs-title:visited b
+	{
+	color: #663399;
+}
+
+.gs-webResult.gs-result a.gs-title:hover, .gs-webResult.gs-result a.gs-title:hover b,
+	.gs-imageResult a.gs-title:hover, .gs-imageResult a.gs-title:hover b {
+	color: #0000CC;
+}
+
+.gs-webResult.gs-result a.gs-title:active, .gs-webResult.gs-result a.gs-title:active b,
+	.gs-imageResult a.gs-title:active, .gs-imageResult a.gs-title:active b
+	{
+	color: #0000CC;
+}
+
+.gsc-cursor-page {
+	color: #0000FF;
+}
+
+a.gsc-trailing-more-results:link {
+	color: #0000FF;
+}
+
+.gs-webResult .gs-snippet, .gs-imageResult .gs-snippet,
+	.gs-fileFormatType {
+	color: #000000;
+}
+
+.gs-webResult div.gs-visibleUrl, .gs-imageResult div.gs-visibleUrl {
+	color: #008000;
+}
+
+.gs-webResult div.gs-visibleUrl-short {
+	color: #008000;
+}
+
+.gs-webResult div.gs-visibleUrl-short {
+	display: none;
+}
+
+.gs-webResult div.gs-visibleUrl-long {
+	display: block;
+}
+
+.gs-promotion div.gs-visibleUrl-short {
+	display: none;
+}
+
+.gs-promotion div.gs-visibleUrl-long {
+	display: block;
+}
+
+.gsc-cursor-box {
+	border-color: #FFFFFF;
+}
+
+.gsc-results .gsc-cursor-box .gsc-cursor-page {
+	border-color: #E9E9E9;
+	background-color: #FFFFFF;
+	color: #0000FF;
+}
+
+.gsc-results .gsc-cursor-box .gsc-cursor-current-page {
+	border-color: #FF9900;
+	background-color: #FFFFFF;
+	color: #663399;
+}
+
+.gsc-webResult.gsc-result.gsc-promotion {
+	border-color: #336699;
+	background-color: #FFFFFF;
+}
+
+.gsc-completion-title {
+	color: #0000FF;
+}
+
+.gsc-completion-snippet {
+	color: #000000;
+}
+
+.gs-promotion a.gs-title:link, .gs-promotion a.gs-title:link *,
+	.gs-promotion .gs-snippet a:link {
+	color: #0000FF;
+}
+
+.gs-promotion a.gs-title:visited, .gs-promotion a.gs-title:visited *,
+	.gs-promotion .gs-snippet a:visited {
+	color: #663399;
+}
+
+.gs-promotion a.gs-title:hover, .gs-promotion a.gs-title:hover *,
+	.gs-promotion .gs-snippet a:hover {
+	color: #0000FF;
+}
+
+.gs-promotion a.gs-title:active, .gs-promotion a.gs-title:active *,
+	.gs-promotion .gs-snippet a:active {
+	color: #0000FF;
+}
+
+.gs-promotion .gs-snippet, .gs-promotion .gs-title .gs-promotion-title-right,
+	.gs-promotion .gs-title .gs-promotion-title-right * {
+	color: #000000;
+}
+
+.gs-promotion .gs-visibleUrl, .gs-promotion .gs-visibleUrl-short {
+	color: #008000;
+}
+</style>
+<style type="text/css">
+.gscb_a {
+	display: inline-block;
+	font: 27px/13px arial, sans-serif
+}
+
+.gsst_a .gscb_a {
+	color: #a1b9ed;
+	cursor: pointer
+}
+
+.gsst_a:hover .gscb_a, .gsst_a:focus .gscb_a {
+	color: #36c
+}
+
+.gsst_a {
+	display: inline-block
+}
+
+.gsst_a {
+	cursor: pointer;
+	padding: 0 4px
+}
+
+.gsst_a:hover {
+	text-decoration: none !important
+}
+
+.gsst_b {
+	font-size: 16px;
+	padding: 0 2px;
+	position: relative;
+	user-select: none;
+	-webkit-user-select: none;
+	white-space: nowrap
+}
+
+.gsst_e {
+	opacity: 0.55;
+}
+
+.gsst_a:hover .gsst_e, .gsst_a:focus .gsst_e {
+	opacity: 0.72;
+}
+
+.gsst_a:active .gsst_e {
+	opacity: 1;
+}
+
+.gsst_f {
+	background: white;
+	text-align: left
+}
+
+.gsst_g {
+	background-color: white;
+	border: 1px solid #ccc;
+	border-top-color: #d9d9d9;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+	-webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+	margin: -1px -3px;
+	padding: 0 6px
+}
+
+.gsst_h {
+	background-color: white;
+	height: 1px;
+	margin-bottom: -1px;
+	position: relative;
+	top: -1px
+}
+
+.gsib_a {
+	width: 100%;
+	padding: 4px 6px 0
+}
+
+.gsib_a, .gsib_b {
+	vertical-align: top
+}
+
+.gssb_c {
+	border: 0;
+	position: absolute;
+	z-index: 989
+}
+
+.gssb_e {
+	border: 1px solid #ccc;
+	border-top-color: #d9d9d9;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+	-webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+	cursor: default
+}
+
+.gssb_f {
+	visibility: hidden;
+	white-space: nowrap
+}
+
+.gssb_k {
+	border: 0;
+	display: block;
+	position: absolute;
+	top: 0;
+	z-index: 988
+}
+
+.gsdd_a {
+	border: none !important
+}
+
+.gsq_a {
+	padding: 0
+}
+
+.gscsep_a {
+	display: none
+}
+
+.gssb_a {
+	padding: 0 7px
+}
+
+.gssb_a, .gssb_a td {
+	white-space: nowrap;
+	overflow: hidden;
+	line-height: 22px
+}
+
+#gssb_b {
+	font-size: 11px;
+	color: #36c;
+	text-decoration: none
+}
+
+#gssb_b:hover {
+	font-size: 11px;
+	color: #36c;
+	text-decoration: underline
+}
+
+.gssb_g {
+	text-align: center;
+	padding: 8px 0 7px;
+	position: relative
+}
+
+.gssb_h {
+	font-size: 15px;
+	height: 28px;
+	margin: 0.2em;
+	-webkit-appearance: button
+}
+
+.gssb_i {
+	background: #eee
+}
+
+.gss_ifl {
+	visibility: hidden;
+	padding-left: 5px
+}
+
+.gssb_i .gss_ifl {
+	visibility: visible
+}
+
+a.gssb_j {
+	font-size: 13px;
+	color: #36c;
+	text-decoration: none;
+	line-height: 100%
+}
+
+a.gssb_j:hover {
+	text-decoration: underline
+}
+
+.gssb_l {
+	height: 1px;
+	background-color: #e5e5e5
+}
+
+.gssb_m {
+	color: #000;
+	background: #fff
+}
+
+.gsfe_a {
+	border: 1px solid #b9b9b9;
+	border-top-color: #a0a0a0;
+	box-shadow: inset 0px 1px 2px rgba(0, 0, 0, 0.1);
+	-moz-box-shadow: inset 0px 1px 2px rgba(0, 0, 0, 0.1);
+	-webkit-box-shadow: inset 0px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.gsfe_b {
+	border: 1px solid #4d90fe;
+	outline: none;
+	box-shadow: inset 0px 1px 2px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: inset 0px 1px 2px rgba(0, 0, 0, 0.3);
+	-webkit-box-shadow: inset 0px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.gssb_a {
+	padding: 0 7px
+}
+
+.gssb_e {
+	border: 0
+}
+
+.gssb_l {
+	margin: 5px 0
+}
+
+#gsc-i-id1::-webkit-input-placeholder {
+	font-size: 14px
+}
+
+#gsc-i-id1:-moz-placeholder {
+	font-size: 14px
+}
+
+#gsc-i-id1::-moz-placeholder {
+	font-size: 14px
+}
+
+#gsc-i-id1:-ms-input-placeholder {
+	font-size: 14px
+}
+
+#gsc-i-id1:focus::-webkit-input-placeholder {
+	color: transparent
+}
+
+#gsc-i-id1:focus:-moz-placeholder {
+	color: transparent
+}
+
+#gsc-i-id1:focus::-moz-placeholder {
+	color: transparent
+}
+
+#gsc-i-id1:focus:-ms-input-placeholder {
+	color: transparent
+}
+
+.gssb_c .gsc-completion-container {
+	position: static
+}
+
+.gssb_c {
+	z-index: 5000
+}
+
+.gsc-completion-container table {
+	background: transparent;
+	font-size: inherit;
+	font-family: inherit
+}
+
+.gssb_c>tbody>tr, .gssb_c>tbody>tr>td, .gssb_d, .gssb_d>tbody>tr,
+	.gssb_d>tbody>tr>td, .gssb_e, .gssb_e>tbody>tr, .gssb_e>tbody>tr>td {
+	padding: 0;
+	margin: 0;
+	border: 0
+}
+
+.gssb_a table, .gssb_a table tr, .gssb_a table tr td {
+	padding: 0;
+	margin: 0;
+	border: 0
+}
+</style>
+</head>
+
+<body>
+
+
+	<div class="skolon-plugin"></div>
+
+
+	<script type="text/javascript">
+
+       
+
+        $(window).on("ready", function () {
+            var w = $("body").width();
+            if (w < 450 ) {
+                var initScale = w / 450;
+                viewport = document.querySelector("meta[name=viewport]");
+                viewport.setAttribute('content', 'width=450, initial-scale=' + initScale + ' , maximum-scale=1.0, user-scalable=0');
+             
+            }
+        })
+   
+
+        standalone = false;
+        window.fbAsyncInit = function () {
+            FB.init({
+                appId: '319599044764636', 
+                status: true, // check login status
+                cookie: true, // enable cookies to allow the server to access the session
+                xfbml: true // parse XFBML
+            });
+        };
+
+
+
+        function publishFB() {
+            var exercise = 'États-Unis : les capitales des États';
+            var txtScore3 = 'Mon score :';
+            var lang = 'fr';
+            var mode = 'p';
+
+
+            FB.ui(
+      {
+          status: true, // check login status
+          cookie: true, // enable cookies to allow the server to access the session
+          xfbml: true, // parse XFBML
+          app_id: '319599044764636', 
+          method: 'feed',
+          name: 'Seterra: ' + exercise,
+          link: 'http://online.seterra.com/' + lang + "/vg" + mode + "/" + exerciseID,
+          picture: 'http://online.seterra.com/mapimage/' + exerciseID + '.png',
+          description: txtScore3 + ' ' + score + "%   " + newTime + '.',
+          display: "popup"
+      });
+            
+        }
+         
+        var strTranslations = "Albany,Annapolis,Atlanta,Augusta,Austin,Bâton-Rouge,Bismarck,Boise,Boston,Carson City,Charleston,Cheyenne,Columbia,Columbus,Concord,Denver,Des Moines,Dover,Frankfort,Harrisburg,Hartford,Helena,Honolulu,Indianapolis,Jackson,Jefferson City,Juneau,Lansing,Lincoln,Little Rock,Madison,Montgomery,Montpelier,Nashville,Oklahoma City,Olympia,Phoenix,Pierre,Providence,Raleigh,Richmond,Sacramento,Saint Paul,Salem,Salt Lake City,Santa Fe,Springfield,Tallahassee,Topeka,Trenton,Washington DC";
+
+        var strInfoTranslations = "";
+
+        var objCountry = [{"id":"CITY_ALBANY","qText":"Albany","qImgURL":null,"infoImgURL":null,"infoText":"","wikipediaLink":""},{"qText":"Annapolis","id":"CITY_ANNAPOLIS","qImgURL":null,"infoImgURL":null,"infoText":"","wikipediaLink":""},{"qText":"Atlanta","id":"CITY_ATLANTA","qImgURL":null,"infoImgURL":null,"infoText":"","wikipediaLink":""},{"qText":"Augusta","id":"CITY_AUGUSTA","qImgURL":null,"infoImgURL":null,"infoText":"","wikipediaLink":""},{"qText":"Austin","id":"CITY_AUSTIN","qImgURL":null,"infoImgURL":null,"infoText":"","wikipediaLink":""},{"qText":"Bâton-Rouge","id":"CITY_BATONROUGE","qImgURL":null,"infoImgURL":null,"infoText":"","wikipediaLink":""},{"qText":"Bismarck","id":"CITY_BISMARCK","qImgURL":null,"infoImgURL":null,"infoText":"","wikipediaLink":""},{"qText":"Boise","id":"CITY_BOISE","qImgURL":null,"infoImgURL":null,"infoText":"","wikipediaLink":""},{"qText":"Boston","id":"CITY_BOSTON","qImgURL":null,"infoImgURL":null,"infoText":"","wikipediaLink":""},{"qText":"Carson City","id":"CITY_CARSONCITY","qImgURL":null,"infoImgURL":null,"infoText":"","wikipediaLink":""},{"qText":"Charleston","id":"CITY_CHARLESTONWV","qImgURL":null,"infoImgURL":null,"infoText":"","wikipediaLink":""},{"qText":"Cheyenne","id":"CITY_CHEYENNE","qImgURL":null,"infoImgURL":null,"infoText":"","wikipediaLink":""},{"qText":"Columbia","id":"CITY_COLUMBIA","qImgURL":null,"infoImgURL":null,"infoText":"","wikipediaLink":""},{"qText":"Columbus","id":"CITY_COLUMBUS","qImgURL":null,"infoImgURL":null,"infoText":"","wikipediaLink":""},{"qText":"Concord","id":"CITY_CONCORD","qImgURL":null,"infoImgURL":null,"infoText":"","wikipediaLink":""},{"qText":"Denver","id":"CITY_DENVER","qImgURL":null,"infoImgURL":null,"infoText":"","wikipediaLink":""},{"qText":"Des Moines","id":"CITY_DESMOINES","qImgURL":null,"infoImgURL":null,"infoText":"","wikipediaLink":""},{"qText":"Dover","id":"CITY_DOVER","qImgURL":null,"infoImgURL":null,"infoText":"","wikipediaLink":""},{"qText":"Frankfort","id":"CITY_FRANKFORT","qImgURL":null,"infoImgURL":null,"infoText":"","wikipediaLink":""},{"qText":"Harrisburg","id":"CITY_HARRISBURG","qImgURL":null,"infoImgURL":null,"infoText":"","wikipediaLink":""},{"qText":"Hartford","id":"CITY_HARTFORD","qImgURL":null,"infoImgURL":null,"infoText":"","wikipediaLink":""},{"qText":"Helena","id":"CITY_HELENA","qImgURL":null,"infoImgURL":null,"infoText":"","wikipediaLink":""},{"qText":"Honolulu","id":"CITY_HONOLULU","qImgURL":null,"infoImgURL":null,"infoText":"","wikipediaLink":""},{"qText":"Indianapolis","id":"CITY_INDIANAPOLIS","qImgURL":null,"infoImgURL":null,"infoText":"","wikipediaLink":""},{"qText":"Jackson","id":"CITY_JACKSON","qImgURL":null,"infoImgURL":null,"infoText":"","wikipediaLink":""},{"qText":"Jefferson City","id":"CITY_JEFFERSONCITY","qImgURL":null,"infoImgURL":null,"infoText":"","wikipediaLink":""},{"qText":"Juneau","id":"CITY_JUNEAU","qImgURL":null,"infoImgURL":null,"infoText":"","wikipediaLink":""},{"qText":"Lansing","id":"CITY_LANSING","qImgURL":null,"infoImgURL":null,"infoText":"","wikipediaLink":""},{"qText":"Lincoln","id":"CITY_LINCOLN","qImgURL":null,"infoImgURL":null,"infoText":"","wikipediaLink":""},{"qText":"Little Rock","id":"CITY_LITTLEROCK","qImgURL":null,"infoImgURL":null,"infoText":"","wikipediaLink":""},{"qText":"Madison","id":"CITY_MADISON","qImgURL":null,"infoImgURL":null,"infoText":"","wikipediaLink":""},{"qText":"Montgomery","id":"CITY_MONTGOMERY","qImgURL":null,"infoImgURL":null,"infoText":"","wikipediaLink":""},{"qText":"Montpelier","id":"CITY_MONTPELIER","qImgURL":null,"infoImgURL":null,"infoText":"","wikipediaLink":""},{"qText":"Nashville","id":"CITY_NASHVILLE","qImgURL":null,"infoImgURL":null,"infoText":"","wikipediaLink":""},{"qText":"Oklahoma City","id":"CITY_OKLAHOMACITY","qImgURL":null,"infoImgURL":null,"infoText":"","wikipediaLink":""},{"qText":"Olympia","id":"CITY_OLYMPIA","qImgURL":null,"infoImgURL":null,"infoText":"","wikipediaLink":""},{"qText":"Phoenix","id":"CITY_PHOENIX","qImgURL":null,"infoImgURL":null,"infoText":"","wikipediaLink":""},{"qText":"Pierre","id":"CITY_PIERRE","qImgURL":null,"infoImgURL":null,"infoText":"","wikipediaLink":""},{"qText":"Providence","id":"CITY_PROVIDENCE","qImgURL":null,"infoImgURL":null,"infoText":"","wikipediaLink":""},{"qText":"Raleigh","id":"CITY_RALEIGH","qImgURL":null,"infoImgURL":null,"infoText":"","wikipediaLink":""},{"qText":"Richmond","id":"CITY_RICHMOND","qImgURL":null,"infoImgURL":null,"infoText":"","wikipediaLink":""},{"qText":"Sacramento","id":"CITY_SACRAMENTO","qImgURL":null,"infoImgURL":null,"infoText":"","wikipediaLink":""},{"qText":"Saint Paul","id":"CITY_SAINTPAUL","qImgURL":null,"infoImgURL":null,"infoText":"","wikipediaLink":""},{"qText":"Salem","id":"CITY_SALEM","qImgURL":null,"infoImgURL":null,"infoText":"","wikipediaLink":""},{"qText":"Salt Lake City","id":"CITY_SALTLAKECITY","qImgURL":null,"infoImgURL":null,"infoText":"","wikipediaLink":""},{"qText":"Santa Fe","id":"CITY_SANTAFE","qImgURL":null,"infoImgURL":null,"infoText":"","wikipediaLink":""},{"qText":"Springfield","id":"CITY_SPRINGFIELD","qImgURL":null,"infoImgURL":null,"infoText":"","wikipediaLink":""},{"qText":"Tallahassee","id":"CITY_TALLAHASSEE","qImgURL":null,"infoImgURL":null,"infoText":"","wikipediaLink":""},{"qText":"Topeka","id":"CITY_TOPEKA","qImgURL":null,"infoImgURL":null,"infoText":"","wikipediaLink":""},{"qText":"Trenton","id":"CITY_TRENTON","qImgURL":null,"infoImgURL":null,"infoText":"","wikipediaLink":""},{"qText":"Washington DC","id":"CITY_WASHINGTONDC","qImgURL":null,"infoImgURL":null,"infoText":"","wikipediaLink":""}];
+        var objCountry2 = [{"id":"CITY_ALBANY","qText":"Albany","qImgURL":null,"infoImgURL":null,"infoText":"","wikipediaLink":""},{"qText":"Annapolis","id":"CITY_ANNAPOLIS","qImgURL":null,"infoImgURL":null,"infoText":"","wikipediaLink":""},{"qText":"Atlanta","id":"CITY_ATLANTA","qImgURL":null,"infoImgURL":null,"infoText":"","wikipediaLink":""},{"qText":"Augusta","id":"CITY_AUGUSTA","qImgURL":null,"infoImgURL":null,"infoText":"","wikipediaLink":""},{"qText":"Austin","id":"CITY_AUSTIN","qImgURL":null,"infoImgURL":null,"infoText":"","wikipediaLink":""},{"qText":"Bâton-Rouge","id":"CITY_BATONROUGE","qImgURL":null,"infoImgURL":null,"infoText":"","wikipediaLink":""},{"qText":"Bismarck","id":"CITY_BISMARCK","qImgURL":null,"infoImgURL":null,"infoText":"","wikipediaLink":""},{"qText":"Boise","id":"CITY_BOISE","qImgURL":null,"infoImgURL":null,"infoText":"","wikipediaLink":""},{"qText":"Boston","id":"CITY_BOSTON","qImgURL":null,"infoImgURL":null,"infoText":"","wikipediaLink":""},{"qText":"Carson City","id":"CITY_CARSONCITY","qImgURL":null,"infoImgURL":null,"infoText":"","wikipediaLink":""},{"qText":"Charleston","id":"CITY_CHARLESTONWV","qImgURL":null,"infoImgURL":null,"infoText":"","wikipediaLink":""},{"qText":"Cheyenne","id":"CITY_CHEYENNE","qImgURL":null,"infoImgURL":null,"infoText":"","wikipediaLink":""},{"qText":"Columbia","id":"CITY_COLUMBIA","qImgURL":null,"infoImgURL":null,"infoText":"","wikipediaLink":""},{"qText":"Columbus","id":"CITY_COLUMBUS","qImgURL":null,"infoImgURL":null,"infoText":"","wikipediaLink":""},{"qText":"Concord","id":"CITY_CONCORD","qImgURL":null,"infoImgURL":null,"infoText":"","wikipediaLink":""},{"qText":"Denver","id":"CITY_DENVER","qImgURL":null,"infoImgURL":null,"infoText":"","wikipediaLink":""},{"qText":"Des Moines","id":"CITY_DESMOINES","qImgURL":null,"infoImgURL":null,"infoText":"","wikipediaLink":""},{"qText":"Dover","id":"CITY_DOVER","qImgURL":null,"infoImgURL":null,"infoText":"","wikipediaLink":""},{"qText":"Frankfort","id":"CITY_FRANKFORT","qImgURL":null,"infoImgURL":null,"infoText":"","wikipediaLink":""},{"qText":"Harrisburg","id":"CITY_HARRISBURG","qImgURL":null,"infoImgURL":null,"infoText":"","wikipediaLink":""},{"qText":"Hartford","id":"CITY_HARTFORD","qImgURL":null,"infoImgURL":null,"infoText":"","wikipediaLink":""},{"qText":"Helena","id":"CITY_HELENA","qImgURL":null,"infoImgURL":null,"infoText":"","wikipediaLink":""},{"qText":"Honolulu","id":"CITY_HONOLULU","qImgURL":null,"infoImgURL":null,"infoText":"","wikipediaLink":""},{"qText":"Indianapolis","id":"CITY_INDIANAPOLIS","qImgURL":null,"infoImgURL":null,"infoText":"","wikipediaLink":""},{"qText":"Jackson","id":"CITY_JACKSON","qImgURL":null,"infoImgURL":null,"infoText":"","wikipediaLink":""},{"qText":"Jefferson City","id":"CITY_JEFFERSONCITY","qImgURL":null,"infoImgURL":null,"infoText":"","wikipediaLink":""},{"qText":"Juneau","id":"CITY_JUNEAU","qImgURL":null,"infoImgURL":null,"infoText":"","wikipediaLink":""},{"qText":"Lansing","id":"CITY_LANSING","qImgURL":null,"infoImgURL":null,"infoText":"","wikipediaLink":""},{"qText":"Lincoln","id":"CITY_LINCOLN","qImgURL":null,"infoImgURL":null,"infoText":"","wikipediaLink":""},{"qText":"Little Rock","id":"CITY_LITTLEROCK","qImgURL":null,"infoImgURL":null,"infoText":"","wikipediaLink":""},{"qText":"Madison","id":"CITY_MADISON","qImgURL":null,"infoImgURL":null,"infoText":"","wikipediaLink":""},{"qText":"Montgomery","id":"CITY_MONTGOMERY","qImgURL":null,"infoImgURL":null,"infoText":"","wikipediaLink":""},{"qText":"Montpelier","id":"CITY_MONTPELIER","qImgURL":null,"infoImgURL":null,"infoText":"","wikipediaLink":""},{"qText":"Nashville","id":"CITY_NASHVILLE","qImgURL":null,"infoImgURL":null,"infoText":"","wikipediaLink":""},{"qText":"Oklahoma City","id":"CITY_OKLAHOMACITY","qImgURL":null,"infoImgURL":null,"infoText":"","wikipediaLink":""},{"qText":"Olympia","id":"CITY_OLYMPIA","qImgURL":null,"infoImgURL":null,"infoText":"","wikipediaLink":""},{"qText":"Phoenix","id":"CITY_PHOENIX","qImgURL":null,"infoImgURL":null,"infoText":"","wikipediaLink":""},{"qText":"Pierre","id":"CITY_PIERRE","qImgURL":null,"infoImgURL":null,"infoText":"","wikipediaLink":""},{"qText":"Providence","id":"CITY_PROVIDENCE","qImgURL":null,"infoImgURL":null,"infoText":"","wikipediaLink":""},{"qText":"Raleigh","id":"CITY_RALEIGH","qImgURL":null,"infoImgURL":null,"infoText":"","wikipediaLink":""},{"qText":"Richmond","id":"CITY_RICHMOND","qImgURL":null,"infoImgURL":null,"infoText":"","wikipediaLink":""},{"qText":"Sacramento","id":"CITY_SACRAMENTO","qImgURL":null,"infoImgURL":null,"infoText":"","wikipediaLink":""},{"qText":"Saint Paul","id":"CITY_SAINTPAUL","qImgURL":null,"infoImgURL":null,"infoText":"","wikipediaLink":""},{"qText":"Salem","id":"CITY_SALEM","qImgURL":null,"infoImgURL":null,"infoText":"","wikipediaLink":""},{"qText":"Salt Lake City","id":"CITY_SALTLAKECITY","qImgURL":null,"infoImgURL":null,"infoText":"","wikipediaLink":""},{"qText":"Santa Fe","id":"CITY_SANTAFE","qImgURL":null,"infoImgURL":null,"infoText":"","wikipediaLink":""},{"qText":"Springfield","id":"CITY_SPRINGFIELD","qImgURL":null,"infoImgURL":null,"infoText":"","wikipediaLink":""},{"qText":"Tallahassee","id":"CITY_TALLAHASSEE","qImgURL":null,"infoImgURL":null,"infoText":"","wikipediaLink":""},{"qText":"Topeka","id":"CITY_TOPEKA","qImgURL":null,"infoImgURL":null,"infoText":"","wikipediaLink":""},{"qText":"Trenton","id":"CITY_TRENTON","qImgURL":null,"infoImgURL":null,"infoText":"","wikipediaLink":""},{"qText":"Washington DC","id":"CITY_WASHINGTONDC","qImgURL":null,"infoImgURL":null,"infoText":"","wikipediaLink":""}];
+        //  alert(strTranslations);
+        var clickOnText = 'Cliquez sur';
+        var dragDropText = 'Cliquez sur l’étiquette puis sur son emplacement sur la carte.';
+        var dragDropText1 = 'Cliquez sur une étiquette au-dessus de la carte';
+        var showLabels = "1";
+        var inputLabel = "Tapez le nom de l'emplacement surligné dans la zone de texte";
+        var submitValue = "Envoyer la réponse";
+        var skipValue = "Passer";
+        var hintValue = "Donnez-moi un indice !";
+        var hintLabel = "Indice";
+        var lang = "fr";
+
+
+
+        var vsvgpoint = document.getElementById('svgpoint');
+        FastClick.attach(vsvgpoint);
+
+
+        function setupCompletion() {
+            
+            var txtScore1 = 'Bravo !';
+            var txtScore2 = 'Ton score:';
+            var tellfriends = 'Partage ton score avec tes amis!';
+            
+             
+            var exerciseID = '3063';
+            var exercise = 'États-Unis : les capitales des États';
+            var txtScore3 = 'Mon score :';
+            var lang = 'fr';
+            var mode = 'p';
+            var btnText = 'OK';
+            
+            
+
+            $("#lblFinalScore").text(txtScore1  + " " + txtScore2 + " " + score + "%   " + newTime);
+            $("#lblTellFriends").text(tellfriends);
+            $("#btnComplete").attr("value", btnText);
+
+
+            var compPanel = $("#completion");
+
+            var completeX = ($(".gamewindow").width() - compPanel.width()) / 2;
+             
+            var completeY = 25;
+
+            compPanel.css("left", completeX + "px");
+            compPanel.css("top", completeY + "px");
+
+
+
+            
+
+        }
+    </script>
+
+	<form name="form1" method="post" action="http://online.seterra.com/fr/vgp/3063" id="form1">
+		<div>
+			<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE"
+				value="/wEPDwUJMjkwNTIxODM4ZBgBBR5fX0NvbnRyb2xzUmVxdWlyZVBvc3RCYWNrS2V5X18WAQUJY2JTb3VuZE9uA70eD7YyCPGke9dk2nL1fm16TYBwSktre9VDzEf7+5E=">
+		</div>
+
+		<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form1'];
+if (!theForm) {
+    theForm = document.form1;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+		<script src="./files/WebResource.axd" type="text/javascript"></script>
+
+		<div>
+
+			<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="E253BCCD"> <input type="hidden" name="__SCROLLPOSITIONX"
+				id="__SCROLLPOSITIONX" value="0"> <input type="hidden" name="__SCROLLPOSITIONY" id="__SCROLLPOSITIONY" value="0"> <input type="hidden"
+				name="__EVENTTARGET" id="__EVENTTARGET" value=""> <input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value=""> <input
+				type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION"
+				value="/wEdAAaCHJb2k8lcjqIMw+TFVIjvGk7i2ad+bU5xgmtsUhddMylyePOxA+lmuIKK+fpxCwVtIyfFt0hSodxZWeDFwmVUWFpQqmYMO7dnkZiAJdCUhckC4EBQMNljz+UG/jDbRdMt1yJxios5TeuAPIN/L69NbXKqXqZDdZY3MvW0p6Ad7Q==">
+		</div>
+
+		<div>
+
+			<div id="contentwrapper">
+				<div id="leftcol">
+
+					<div id="maincontent">
+						<div>
+							<div id="pagetitle"></div>
+
+
+						</div>
+
+						<div class="sectionhead fullwidth ">
+
+
+							<div class="sectionheadtext areaheading" style="padding-bottom: 5px;">
+								<span id="lblTitleLeft" class="titleleft">États-Unis : les capitales des États</span>
+							</div>
+
+						</div>
+						<div style="clear: both;"></div>
+
+						<div class="gamepartlist" style="display: block;">
+							<img id="imgFlag" class="gameflag" src="./files/flag-usa.png" style="border-width: 0px;">
+							<div class="gamelist">
+								<b> </b> <span id="dlstgamelist"><span>Albany</span><span>, </span><span>Annapolis</span><span>, </span><span>Atlanta</span><span>, </span><span>Augusta</span><span>,
+								</span><span>Austin</span><span>, </span><span>Bâton-Rouge</span><span>, </span><span>Bismarck</span><span>, </span><span>Boise</span><span>, </span><span>Boston</span><span>,
+								</span><span>Carson City</span><span>, </span><span>Charleston</span><span>, </span><span>Cheyenne</span><span>, </span><span>Columbia</span><span>, </span><span>Columbus</span><span>,
+								</span><span>Concord</span><span>, </span><span>Denver</span><span>, </span><span>Des Moines</span><span>, </span><span>Dover</span><span>, </span><span>Frankfort</span><span>,
+								</span><span>Harrisburg</span><span>, </span><span>Hartford</span><span>, </span><span>Helena</span><span>, </span><span>Honolulu</span><span>, </span><span>Indianapolis</span><span>,
+								</span><span>Jackson</span><span>, </span><span>Jefferson City</span><span>, </span><span>Juneau</span><span>, </span><span>Lansing</span><span>, </span><span>Lincoln</span><span>,
+								</span><span>Little Rock</span><span>, </span><span>Madison</span><span>, </span><span>Montgomery</span><span>, </span><span>Montpelier</span><span>, </span><span>Nashville</span><span>,
+								</span><span>Oklahoma City</span><span>, </span><span>Olympia</span><span>, </span><span>Phoenix</span><span>, </span><span>Pierre</span><span>, </span><span>Providence</span><span>,
+								</span><span>Raleigh</span><span>, </span><span>Richmond</span><span>, </span><span>Sacramento</span><span>, </span><span>Saint Paul</span><span>, </span><span>Salem</span><span>,
+								</span><span>Salt Lake City</span><span>, </span><span>Santa Fe</span><span>, </span><span>Springfield</span><span>, </span><span>Tallahassee</span><span>,
+								</span><span>Topeka</span><span>, </span><span>Trenton</span><span>, </span><span>Washington DC</span></span>.
+							</div>
+							<div style="clear: both;"></div>
+						</div>
+						<div></div>
+
+
+
+						<div id="gameselect">
+							<div id="gameOptions">
+
+
+								<div id="dragLabels" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none; -o-user-select: none;"
+									unselectable="on">
+									<div style="clear: both"></div>
+								</div>
+							</div>
+							<div class="gamewindow" style="margin-top: 0px;">
+
+
+								<div id="svgWrapper">
+									<div id="HUDGroup" class="svgGame" style="display: block;">
+										<div id="HUDWrapper"></div>
+										<div id="HUD">
+											<span id="score">0%</span> <span id="timer"> | 3:04</span> <span id="currQuestion"> | Cliquez sur Carson City</span>
+										</div>
+									</div>
+									<div id="svgDiv" class="svgMap" style="display: block;">
+										<!--?xml version="1.0" encoding="utf-8"?-->
+										<!-- Generator: Adobe Illustrator 18.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+										<svg version="1.1" id="svgpoint" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="990.45px"
+											height="770.35px" viewBox="0 -50 900 725" enable-background="new 0 -50 900 725" xml:space="preserve">
+<rect id="BACKGROUND" x="0.589" y="-50.497" fill="#deded7" width="899.48" height="725"></rect>
+<g id="HIGHLIGHT">
+	<path id="path7" fill="#1e8346" stroke="#b6b6bf" stroke-miterlimit="10"
+												d="M137.594,385.436l3.927-0.785l1.374-2.061l0.589-2.65
+		l-3.436-0.589l-0.393-0.785l0.393-1.669l0.098-5.595l1.963-0.687l2.65-2.65l0.491-4.712l1.374-3.534l1.865-1.865l3.239-1.669
+		l1.472-1.276l0.098-2.16l-0.982-0.589l-0.785-0.982l-1.178-5.595l-2.552-4.712l0.589-3.141l-2.356-3.141l-13.645-21.302
+		l-18.161-27.683l-21.302-32.198l-11.583-17.67l1.571-6.283l6.577-24.738l7.657-29.94l-12.565-3.534l-12.565-3.239l-11.68-3.928
+		l-7.068-1.963l-10.602-2.847l-6.675-2.356l-1.472,4.516l-0.196,7.166l-4.908,11.191l-2.847,2.454l-0.294,1.08l-1.669,0.785
+		l-1.374,4.025l-0.785,3.043L25,195.193l1.472,4.025l1.08,3.436l-0.294,6.184l-1.669,2.945L25,217.378l-0.883,3.534l1.669,3.73
+		l2.552,4.319l1.963,4.516l1.178,3.828l-0.294,3.043l-0.294,0.491v1.963l5.301,5.988l-0.491,2.356l-0.589,2.16l-0.589,1.865
+		l0.196,7.853l1.963,3.534l1.865,2.454l2.552,0.491l0.883,2.65l-1.08,3.436l-1.963,1.571h-1.08l-0.785,3.73l0.491,2.749l3.043,4.221
+		l1.472,5.105l1.374,4.516l1.178,2.945l3.239,5.595l1.374,2.454l0.491,2.749l1.472,0.883v2.356l-0.785,1.865l-1.669,6.773
+		l-0.491,1.865l2.258,2.65l3.927,0.491l4.221,1.669l3.632,1.963h2.749l2.749,2.945l2.454,4.614l1.08,2.16l3.632,1.963l4.516,0.785
+		l1.374,1.963l0.589,3.141l-1.374,0.589l0.294,0.883l3.043,0.785l2.552,0.196l2.749,4.516l3.632,4.025l0.785,2.16l2.454,4.025
+		l0.294,3.141v8.933l0.491,1.669l9.424,1.374l18.455,2.65L137.594,385.436L137.594,385.436z M54.743,337.728l1.178,1.472
+		l-0.196,1.276l-3.043-0.098l-0.491-1.178l-0.589-1.374L54.743,337.728L54.743,337.728z M56.608,337.728l1.178-0.589l3.338,1.963
+		l2.847,1.178l-0.785,0.589l-4.221-0.196l-1.472-1.571L56.608,337.728L56.608,337.728z M75.946,356.477l1.669,2.258l0.785,0.982
+		l1.472,0.589l0.491-1.374l-0.883-1.669l-2.552-1.963l-0.982,0.196C75.946,355.496,75.946,356.477,75.946,356.477z M74.572,364.723
+		l1.669,3.043l1.178,1.865l-1.374,0.196l-1.178-1.178c0,0-0.687-1.374-0.687-1.767s0-2.061,0-2.061L74.572,364.723z"
+												stroke-width="0.7"></path>
+	<path id="path10" fill="#1e8346" stroke="#b6b6bf" stroke-miterlimit="10"
+												d="M140.931,185.277l4.221-17.179l4.123-16.884
+		l1.276-4.025l2.356-5.694l-1.178-2.16l-2.356,0.098l-0.785-0.982l0.393-1.08l0.294-2.945l4.221-5.301l1.669-0.393l1.08-1.08
+		l0.491-3.043l0.883-0.687l3.632-5.595l3.632-4.123l0.196-3.632l-3.239-2.552l-0.982-4.025l-13.056-3.436l-14.038-3.436
+		l-14.43,0.098l-0.393-1.276l-5.203,1.963l-4.221-0.589l-2.258-1.571l-1.178,0.687l-4.417-0.196l-1.571-1.276L95.185,93L94.4,93.098
+		l-4.123-1.374l-1.865,1.767l-5.792-0.294l-5.595-3.927l0.687-0.785l0.196-7.461l-2.16-3.73l-3.828-0.589l-0.589-2.454l-2.258-0.491
+		l-5.497,1.963l-2.16,6.184l-3.043,9.62l-3.043,6.184l-4.712,13.35l-6.086,12.86L37.17,136.29l-1.865,2.749l-0.785,8.246
+		l-1.178,5.694l2.061,4.319l6.675,2.356l10.602,2.847l7.068,1.963l11.682,3.927l12.565,3.239l12.565,3.73 M140.735,185.67
+		l-43.88-10.504l31.413,7.755l12.761,2.847"
+												stroke-width="0.7"></path>
+	<path id="path15" fill="#1e8346" stroke="#b6b6bf" stroke-miterlimit="10"
+												d="M341.384,153.766l-10.7-0.883l-30.038-3.141
+		l-15.117-1.963l-26.505-3.927l-18.651-2.847l-1.374,10.602l-3.632,23.069l-4.908,28.959l-1.472,10.111l-1.571,11.289l6.184,0.883
+		l15.805,2.16l8.344,1.08l19.24,2.356l34.849,3.927l22.872,1.963l4.123-42.211l1.472-24.149L341.384,153.766L341.384,153.766z"
+												stroke-width="0.7"></path>
+	<path id="path18" fill="#1e8346" stroke="#b6b6bf" stroke-miterlimit="10"
+												d="M343.544,133.643l0.785-10.994l2.16-23.756
+		l1.178-14.43l1.178-13.547l-29.94-3.239l-27.388-3.436l-27.388-3.828l-30.333-5.105l-17.179-3.239l-30.627-6.675l-4.221,20.32
+		l3.239,7.264l-1.276,4.417l1.767,4.417l3.043,1.276l3.436,9.817l3.436,3.534l0.393,1.08l3.239,1.08l0.393,1.963l-6.675,16.786
+		v2.454l2.356,3.043h0.883l4.516-2.847l0.687-1.08l1.472,0.687l-0.196,5.006l2.552,11.976l2.749,2.454l0.883,0.687l1.767,2.16
+		l-0.589,3.141l0.687,3.239l1.08,0.883l2.16-2.16h2.552l3.043,1.571l2.356-0.883h3.828l3.436,1.571l2.552-0.392l0.393-2.847
+		l2.749-0.687l1.276,1.276l0.393,3.043l2.454,2.356l1.472-10.798l18.651,2.847l26.505,3.927l15.117,1.963l30.038,3.141l10.7,1.178
+		l1.571-15.117L343.544,133.643L343.544,133.643z"
+												stroke-width="0.7"></path>
+	<path id="path21" fill="#1e8346" stroke="#b6b6bf" stroke-miterlimit="10"
+												d="M140.735,185.67l4.417-17.572l4.123-16.884
+		l1.276-4.025l2.356-5.694l-1.178-2.16l-2.356,0.098l-0.785-0.982l0.393-1.08l0.294-2.945l4.221-5.301l1.669-0.393l1.08-1.08
+		l0.491-3.043l0.883-0.687l3.632-5.595l3.632-4.123l0.196-3.632l-3.239-2.552l-1.276-4.221l0.393-9.228l3.436-15.608l4.221-19.829
+		l3.534-12.761l0.687-3.632l13.154,2.552l-4.221,20.32l3.239,7.264l-1.276,4.417l1.767,4.417l3.043,1.276l3.436,9.817l3.436,3.534
+		l0.393,1.08l3.239,1.08l0.393,1.963l-6.675,16.786v2.454l2.356,3.043h0.883l4.516-2.847l0.687-1.08l1.472,0.687l-0.196,5.006
+		l2.552,11.976l2.749,2.454l0.883,0.687l1.767,2.16l-0.295,3.043l0.687,3.239l1.08,0.883l2.16-2.16h2.552l3.043,1.571l2.356-0.883
+		h3.828l3.436,1.571l2.552-0.393l0.393-2.847l2.749-0.687l1.276,1.276l0.393,3.043l2.454,1.963l-3.534,23.265l-4.81,28.861
+		l-4.516-0.785l-7.853-1.276l-9.718-1.767l-11.191-1.963l-11.78-2.258l-7.559-1.963l-8.737-1.767l-9.129-1.865L140.735,185.67
+		L140.735,185.67z"
+												stroke-width="0.7"></path>
+	<path id="path24" fill="#1e8346" stroke="#b6b6bf" stroke-miterlimit="10"
+												d="M137.986,385.534l-2.454,2.061l-0.294,1.374
+		l0.491,0.883l17.67,10.209l11.387,7.166l13.743,8.246l15.706,9.62l11.485,2.356l25.032,3.338l1.963-12.663l3.534-25.621
+		l6.577-50.751l4.025-29.351l-24.05-3.632l-25.523-4.417l-31.216-6.086l-2.749,17.179l-0.393,0.393l-1.571,2.552l-2.356-0.098
+		l-1.178-2.65l-2.552-0.294l-0.883-1.08h-0.883l-0.883,0.589l-1.865,0.982l-0.098,6.675l-0.196,1.669l-0.491,11.976l-1.374,2.061
+		L148,341.361l2.552,4.712l1.178,5.595l0.785,0.982l0.982,0.589l-0.098,2.16l-1.472,1.276l-3.239,1.669l-1.865,1.865l-1.374,3.534
+		l-0.491,4.712l-2.65,2.65l-1.963,0.687l-0.098,5.595l-0.393,1.669l0.393,0.785l3.436,0.589l-0.589,2.65l-1.374,2.061
+		L137.986,385.534L137.986,385.534z"
+												stroke-width="0.7"></path>
+	<path id="path27" fill="#1e8346" stroke="#b6b6bf" stroke-miterlimit="10"
+												d="M140.735,185.67l19.633,4.319l9.129,1.865
+		l8.737,1.767l7.559,2.061l-1.178,5.301l-3.338,16.59l-3.534,19.437l-1.865,8.54l-2.061,12.958l-3.141,15.805l-3.043,14.43
+		l-1.865,10.013l-2.749,16.884l-0.393,0.393l-1.571,2.552l-2.356-0.098l-1.178-2.65l-2.552-0.294l-0.883-1.08h-0.883l-0.883,0.589
+		l-1.865,0.982l-0.098,6.675l-0.196,1.669l-0.491,11.976l-1.374,2.061l-2.356-3.043l-13.547-21.596l-18.161-27.683L92.93,253.895
+		l-11.583-17.67l1.571-6.283l6.577-24.738l7.461-29.94l31.413,7.755l12.761,2.847"
+												stroke-width="0.7"></path>
+	<path id="path30" fill="#1e8346" stroke="#b6b6bf" stroke-miterlimit="10"
+												d="M246.557,312.794l-23.952-3.927l-25.523-4.417
+		l-31.315-5.89l1.963-9.816l3.043-14.43l3.141-15.805l2.061-12.958l1.865-8.54l3.534-19.437l3.338-16.59l1.08-5.301l11.878,2.16
+		l11.191,1.963l9.718,1.767l7.853,1.276l4.516,0.785l-1.571,10.209l-1.767,11.191l6.184,0.883l15.805,2.16l8.639,1.08l-2.945,21.105
+		l-3.043,21.302l-3.534,26.701l-1.374,10.504L246.557,312.794z"
+												stroke-width="0.7"></path>
+	<path id="path33" fill="#1e8346" stroke="#b6b6bf" stroke-miterlimit="10"
+												d="M360.527,324.083l3.828-62.727l1.472-21.302
+		l-31.216-2.65l-22.872-1.963l-34.849-3.927l-19.339-2.356l-2.454,21.105l-3.043,21.302l-3.534,26.701l-1.374,10.504l-0.491,3.73
+		l32.1,3.927l34.554,4.221l30.726,2.061l6.283,0.687l10.602,0.589"
+												stroke-width="0.7"></path>
+	<path id="path36" fill="#1e8346" stroke="#b6b6bf" stroke-miterlimit="10"
+												d="M274.632,427.156l-0.785-4.614l7.559,0.687
+		l27.192,2.65l27.192,1.571l2.16-22.676l3.632-52.911l1.472-17.866h1.276v-11.191l-30.922-2.258l-34.554-4.221l-32.198-3.927
+		l-3.927,29.351l-6.577,50.751l-3.534,25.621l-1.963,12.663l14.43,1.865l1.178-9.62l15.51,2.454L274.632,427.156L274.632,427.156z"
+												stroke-width="0.7"></path>
+	<path id="path39" fill="#1e8346" stroke="#b6b6bf" stroke-miterlimit="10"
+												d="M450.74,138.944l-0.687-8.05l-1.767-6.97
+		l-1.767-12.86l-0.393-9.424l-1.767-3.239l-1.472-4.81v-9.817l0.687-3.73l-1.865-5.301l-27.486-0.491l-17.375-0.589l-24.738-1.276
+		l-23.363-1.767l-1.178,13.449l-1.276,14.332l-2.16,23.756l-0.589,11.485l52.518,3.436L450.74,138.944z"
+												stroke-width="0.7"></path>
+	<path id="path42" fill="#1e8346" stroke="#b6b6bf" stroke-miterlimit="10"
+												d="M452.212,210.899l-0.883-1.963l-1.571-2.749
+		l1.767-4.123l1.276-5.497l-2.552-1.963l-0.393-2.65l0.883-2.454h1.767l0.393-6.577l-0.196-28.959l-0.393-2.847l-3.828-3.043
+		l-1.08-1.767v-1.472l1.963-1.571l1.276-1.276l0.294-3.043l-54.383-1.571l-52.518-3.73l-0.687,5.006l-1.472,15.117l-1.276,17.081
+		l-1.472,24.541l14.528,0.982l18.848,1.08l16.688,1.08l22.283,1.08l10.111-0.393l1.963,2.16l4.516,2.847l1.08,0.883l4.123-1.276
+		l3.632-0.491l2.552-0.196l1.767,1.276l4.712,1.571l2.749,1.571l0.393,1.571l0.883,1.963h1.767L452.212,210.899L452.212,210.899z"
+												stroke-width="0.7"></path>
+	<path id="path45" fill="#1e8346" stroke="#b6b6bf" stroke-miterlimit="10"
+												d="M343.151,334.096l21.204,1.08l29.155,1.08
+		l-1.276,22.578l-0.393,16.983l0.196,1.571l4.123,3.534l1.963,1.08l0.687-0.196l0.687-1.963l1.276,1.767h1.963v-1.276l2.552,1.276
+		l-0.393,3.73l3.828,0.196l2.356,1.08l3.828,0.687l2.356,1.767l2.16-1.963l3.239,0.687l2.356,3.239h0.883v2.16l2.16,0.687l2.16-2.16
+		l1.669,0.687h2.356l0.883,2.454l4.516,1.767l1.276-0.687l1.669-3.927h1.08l1.08,1.963l3.828,0.687l3.436,1.276l2.749,0.883
+		l1.767-0.883l0.589-2.454h4.123l1.963,0.883l2.552-1.963h1.08l0.589,1.571h3.828l1.472-1.963l1.669,0.393l1.963,2.454l3.043,1.767
+		l3.043,0.883l2.552,1.178l2.16,1.865l2.749-1.276l2.552,1.08l0.589,10.504v9.326l0.687,8.933l0.687,3.73l2.356,3.927l0.883,4.81
+		l4.123,5.301l0.196,3.043l0.687,0.687l-0.687,8.049l-2.749,4.81l1.472,1.963l-0.687,2.356l-0.687,6.97l-1.276,3.043l0.294,3.436
+		l-6.086,1.669l-9.228,4.319l-0.883,1.865l-2.454,1.865l-1.963,1.374l-1.178,0.785l-5.301,5.105l-2.552,1.963l-5.006,3.141
+		l-5.301,2.356l-5.89,3.239l-1.669,1.374l-5.497,3.436l-3.141,0.589l-3.632,5.301l-3.828,0.294l-0.883,1.865l2.16,1.865
+		l-1.374,5.301l-1.178,4.319l-1.08,3.73l-0.785,4.319l0.785,2.356l1.669,6.675l0.883,5.89l1.669,2.65l-0.883,1.374l-2.847,1.865
+		l-5.301-3.73l-5.203-1.08l-1.178,0.491l-3.043-0.589l-3.927-2.945l-4.908-1.08l-7.166-3.239l-1.963-3.73l-1.178-6.184l-3.043-1.865
+		l-0.589-2.16l0.589-0.589l0.294-3.239l-1.178-0.589l-0.589-0.884l1.178-4.221l-1.472-2.16l-3.043-1.276l-3.239-4.123l-3.338-6.381
+		l-3.927-2.454l0.196-1.865l-5.006-11.682l-0.785-4.025l-1.669-1.865l-0.196-1.374l-5.595-5.105l-2.454-2.945v-0.982l-2.454-1.963
+		l-6.381-1.08l-6.97-0.589l-2.847-2.16l-4.221,1.669l-3.338,1.374l-2.16,3.141l-0.883,3.534l-4.123,5.89l-2.258,2.356l-2.454-0.883
+		l-1.669-1.08l-1.865-0.589l-3.632-2.16v-0.589l-1.669-1.865l-4.908-1.963l-6.97-7.461l-2.454-5.105v-7.755l-2.65-6.577l-0.491-2.65
+		l-1.473-0.982l-1.08-2.061l-4.712-1.963l-1.178-1.571l-6.675-7.559l-1.08-2.945l-4.417-2.16l-1.374-4.221l-2.454-2.749
+		l-1.865-0.491l-0.589-4.516l7.559,0.687l27.192,2.65l27.192,1.571l2.16-22.676l3.632-52.911L343.151,334.096l1.178-0.098
+		 M436.801,556.93l-0.491-6.773l-2.552-6.872l-0.491-6.773l1.473-7.853l3.141-6.577l3.239-5.203l2.945-3.436l0.589,0.196
+		l-4.516,6.381l-4.123,6.283l-1.865,6.381l-0.294,4.908l0.785,5.89l2.454,6.872l0.491,4.908l0.196,1.374L436.801,556.93
+		L436.801,556.93z"
+												stroke-width="0.7"></path>
+	<path id="path48" fill="#1e8346" stroke="#b6b6bf" stroke-miterlimit="10"
+												d="M463.109,251.539l1.276,2.356l-0.196,2.16l2.356,3.73
+		l3.043,3.927h-5.792l-41.327-0.393l-37.794-1.374l-20.418-0.785l1.571-21.204l-31.216-2.65l4.123-41.916l14.528,0.982l18.848,1.08
+		l16.688,1.08l22.283,1.08l10.111-0.393l1.963,2.16l4.516,2.847l1.08,0.883l4.123-1.276l3.632-0.491l2.552-0.196l1.767,1.276
+		l4.712,1.571l2.749,1.571l0.393,1.571l0.883,1.963h1.767l1.472-0.098l1.08,5.105l2.552,7.264l0.883,4.614l2.16,3.534l0.687,5.006
+		l1.472,3.927l0.196,6.381l1.865,5.301"
+												stroke-width="0.7"></path>
+	<path id="path53" fill="#1e8346" stroke="#b6b6bf" stroke-miterlimit="10"
+												d="M540.07,208.346l0.098,1.767l2.16,0.687l0.883,1.08
+		l0.393,1.767l3.632,3.239l0.687,2.16l-0.687,3.239l-1.669,3.534l-0.687,2.454l-2.16,1.767l-1.767,0.687l-4.908,1.276l-0.687,1.767
+		l-0.687,1.963l0.687,1.276l1.669,1.571l-0.196,3.927l-1.767,1.571l-0.687,1.571v2.65l-1.767,0.393l-1.472,1.08l-0.196,1.276
+		l0.196,1.963l-1.669,1.669l-3.141-3.239l-1.08-2.16l-7.264,0.687l-9.228,0.393l-23.756,0.883l-12.565,0.196l-8.835,0.196
+		l-0.982,0.098l-1.571-5.105l-0.196-6.381l-1.472-3.927l-0.687-5.006l-2.16-3.534l-0.883-4.614l-2.552-7.264l-1.08-5.105
+		l-1.276-2.061l-1.472-2.65l1.767-4.123l1.276-5.497l-2.552-1.963l-0.393-2.65l0.883-2.454h1.571h10.798l46.432-0.687l16.884-0.687
+		l3.828-0.098l0.687,3.141l2.16,1.571l0.196,1.276l-1.963,3.239l0.196,3.043l2.356,3.73l2.356,1.08l2.749,0.393L540.07,208.346
+		L540.07,208.346z"
+												stroke-width="0.7"></path>
+	<path id="path56" fill="#1e8346" stroke="#b6b6bf" stroke-miterlimit="10"
+												d="M450.544,138.944l-0.393-8.05l-1.767-6.97
+		l-1.767-12.86l-0.393-9.424l-1.767-3.239l-1.472-4.81v-9.817l0.687-3.73l-1.669-5.203h28.272l0.294-7.853l0.589-0.196l2.16,0.491
+		l1.865,0.785l0.785,5.301l1.374,5.89l1.571,1.571h4.516l0.294,1.374l5.89,0.295v1.963h4.614l0.294-1.276l1.08-1.08l2.16-0.589
+		l1.178,0.883h2.749l3.632,2.454l5.006,2.356l2.258,0.491l0.491-0.883l1.374-0.491l0.491,2.749l2.454,1.276l0.491-0.491l1.178,0.196
+		v1.963l2.454,0.883h2.847l1.571-0.785l3.043-3.141l2.454-0.491l0.785,1.669l0.491,1.276h0.883l0.884-0.785l8.344-0.294l1.669,2.945
+		h0.589l0.687-1.08l4.123-0.393l-0.589,2.16l-3.927,1.963l-8.639,3.927l-4.516,1.963l-2.847,2.454l-2.258,3.436l-2.16,3.73
+		l-1.669,0.785l-4.221,4.81l-1.178,0.196l-3.141,2.945l0.687,0.491l-2.65,2.552l-0.196,2.65v8.05l-1.08,1.571l-4.908,3.73
+		l-2.16,5.694l0.393,0.196l2.356,1.963l0.687,3.043l-1.767,3.043v3.73l0.393,6.381l2.749,2.847h3.239l1.669,3.043l3.239,0.393
+		l3.632,5.497l6.675,3.927l1.963,2.65l0.883,7.264h-3.828l-16.884,0.687l-46.432,0.687h-10.896l0.491-6.577l-0.196-28.959
+		l-0.393-2.847l-3.828-3.239l-1.08-1.767v-1.767l1.963-1.571l1.276-1.276L450.544,138.944z"
+												stroke-width="0.7"></path>
+	<path id="path59" fill="#1e8346" stroke="#b6b6bf" stroke-miterlimit="10"
+												d="M582.674,206.499l0.098-4.025l-1.472-4.319
+		l-0.589-5.89l-1.08-2.356l0.884-2.945l0.785-2.749l1.374-2.454l-0.589-3.239l-0.589-3.436l0.491-1.669l1.865-2.356l0.196-2.65
+		l-0.785-1.276l0.589-2.454l0.491-3.141l2.552-5.399l2.749-6.479l0.196-2.16l-0.294-0.982l-0.785,0.491l-3.927,5.988l-2.552,3.828
+		l-1.865,1.669l-0.785,2.16l-1.374,0.785l-1.08,1.865l-1.374-0.294l-0.196-1.669l1.178-2.356l1.963-4.516l1.669-1.571l1.08-2.16
+		l-1.571-0.883l-1.276-1.276l-1.472-9.817l-3.436-1.08l-1.276-2.16l-11.682-2.65l-2.356-1.08l-7.755-2.16l-7.755-1.08l-3.927-5.203
+		l-0.491,1.178l-1.08-0.196l-0.589-1.08l-2.552-0.785l-1.08,0.196l-1.669,0.883l-0.884-0.589l0.589-1.865l1.865-2.945l1.08-1.08
+		l-1.865-1.374l-1.963,0.785l-2.749,1.865l-6.97,3.043l-2.749,0.589l-2.749-0.491l-0.883-0.883l-1.963,2.749l-0.196,2.65v8.05
+		l-1.08,1.571l-4.908,3.73l-2.16,5.694l0.393,0.196l2.356,1.963l0.687,3.043l-1.767,3.043v3.73l0.393,6.381l2.749,2.847h3.239
+		l1.669,3.043l3.239,0.393l3.632,5.497l6.675,3.927l1.963,2.65l0.884,7.068l0.687,3.141l2.16,1.571l0.196,1.276l-1.963,3.239
+		l0.196,3.043l2.356,3.73l2.356,1.08l2.749,0.393l1.178,2.454h8.638l24.934-1.571L582.674,206.499L582.674,206.499z"
+												stroke-width="0.7"></path>
+	<path id="path62" fill="#1e8346" stroke="#b6b6bf" stroke-miterlimit="10"
+												d="M529.665,254.386l-3.043-3.043l-1.08-2.16
+		l-7.264,0.687l-9.228,0.393l-23.756,0.883l-12.565,0.196l-7.362,0.098l-2.16,0.098l1.178,2.356l-0.196,2.16l2.356,3.73l2.945,3.927
+		l2.945,2.65l2.16,0.196l1.276,0.883v2.847l-1.767,1.571l-0.393,2.16l1.963,3.239l2.356,2.847l2.356,1.767l1.276,11.093
+		l-0.687,33.572l0.196,4.516l0.393,6.577l21.793-0.491l21.793-0.687l19.437-0.883l10.307-0.393l1.767,2.847l-0.393,2.16l-3.043,2.65
+		l-0.687,2.945l5.792,0.393l4.712-0.687l1.963-6.086l-0.098-5.399l2.749-1.374l1.276-1.571l1.963-1.08l0.196-3.043l0.883-1.767
+		l-1.276-2.356l-2.749,0.393l-1.767-1.963l-1.472-3.927l0.883-2.847l-1.963-3.043l-1.963-4.81l-4.319-0.687l-5.988-5.006l-2.16-3.73
+		l0.687-3.043l2.16-5.694l0.687-3.534l-2.552-1.276l-5.988-0.393l-0.883-1.276l0.196-4.123l-5.203-3.534l-6.872-7.264l-2.16-6.97
+		l-0.393-3.534L529.665,254.386L529.665,254.386z"
+												stroke-width="0.7"></path>
+	<path id="path65" fill="#1e8346" stroke="#b6b6bf" stroke-miterlimit="10"
+												d="M562.845,345.188l-4.614,0.883l-5.792-0.393
+		l0.687-2.847l3.043-2.65l0.393-2.16l-1.767-2.847l-10.307,0.393l-19.437,0.883l-21.793,0.687l-21.793,0.491l1.472,6.577v7.853
+		l1.276,10.405l0.196,36.027l2.16,1.865l2.749-1.276l2.552,1.08l0.589,10.602h20.811l17.964-0.883l10.111,0.098l1.374-2.552
+		l-0.393-4.123l-1.276-2.847l1.276-1.276l-1.276-1.963l0.393-1.767l0.884-5.89l2.749-2.65l-0.687-1.963l3.436-5.006l2.552-0.883
+		V376.7l-0.687-1.276l2.552-5.006l2.552-1.08l-0.294-3.239l2.356-1.08l0.884-4.516l-0.982-3.632l3.828-2.16l0.294-2.454l1.276-4.221
+		L562.845,345.188L562.845,345.188z"
+												stroke-width="0.7"></path>
+	<path id="path68" fill="#1e8346" stroke="#b6b6bf" stroke-miterlimit="10"
+												d="M360.232,323.788l-10.013-0.393l-6.086-0.491
+		l0.196,0.196l-0.491,10.994l20.418,1.08l29.155,1.08l-1.276,22.48l-0.393,16.983l0.196,1.571l4.123,3.534l1.963,1.08l0.687-0.196
+		l0.687-1.963l1.276,1.767h1.963v-1.276l2.552,1.276l-0.393,3.73l3.828,0.196l2.356,1.08l3.828,0.687l2.356,1.767l2.16-1.963
+		l3.239,0.687l2.356,3.239h0.883v2.16l2.16,0.687l2.16-2.16l1.669,0.687h2.356l0.883,2.454l4.516,1.767l1.276-0.687l1.669-3.927
+		h1.08l1.08,1.963l3.828,0.687l3.436,1.276l2.749,0.883l1.767-0.883l0.589-2.454h4.123l1.963,0.883l2.552-1.963h1.08l0.589,1.571
+		h3.828l1.472-1.963l1.669,0.393l1.963,2.454l3.043,1.767l3.043,0.883l2.552,1.571l-0.196-36.321l-1.276-10.405v-7.853l-1.472-6.577
+		l-0.393-6.577l-0.196-4.221l-12.369,0.785l-43.389-0.393l-42.113-1.963L360.232,323.788L360.232,323.788z"
+												stroke-width="0.7"></path>
+	<path id="path71" fill="#1e8346" stroke="#b6b6bf" stroke-miterlimit="10"
+												d="M480.876,326.93l-12.369,0.687l-43.389-0.393
+		l-42.113-1.963l-22.676-1.276l3.927-62.727l20.418,0.785l37.794,1.276l41.327,0.393h5.694l2.945,2.65l2.16,0.196l1.276,0.883v2.847
+		l-1.767,1.571l-0.393,2.16l1.963,3.239l2.356,2.847l2.356,1.767l1.276,11.093L480.876,326.93L480.876,326.93z"
+												stroke-width="0.7"></path>
+	<path id="path74" fill="#1e8346" stroke="#b6b6bf" stroke-miterlimit="10"
+												d="M573.643,467.109l-1.178-2.16l-1.08-3.73
+		l-3.239-3.043l1.08-7.264l-0.688-0.883l-1.767,0.196l-7.755,0.687l-22.676,0.687l-0.393-1.571l0.687-7.657l3.239-5.89l4.908-8.737
+		l-0.883-1.963h1.08l0.687-3.043l-2.16-1.767l0.196-1.767l-1.963-4.417l-0.294-5.301h-10.209l-17.964,0.883H492.46v9.129
+		l0.687,8.933l0.687,3.73l2.356,3.927l0.883,4.81l4.123,5.301l0.196,3.043l0.687,0.687l-0.687,8.05l-2.749,4.81l1.472,1.963
+		l-0.687,2.356l-0.687,6.97l-1.276,3.043l0.098,3.436l4.417-1.472l7.559-0.294l9.718,3.436l6.086,1.08l3.534-1.374l3.043,1.08
+		l3.043,0.883l0.785-1.963l-3.043-1.08l-2.454,0.491l-2.552-1.571c0,0,0.196-1.276,0.785-1.374c0.589-0.196,2.847-0.982,2.847-0.982
+		l1.669,1.374l1.669-0.883l3.043,0.589l1.374,2.356l0.294,2.16l4.221,0.294l1.669,1.669l-0.785,1.571l-1.178,0.785l1.472,1.571
+		l7.853,3.436l3.338-1.276l0.883-2.356l2.454-0.589l1.669-1.374l1.178,0.884l0.785,2.749l-2.16,0.785l0.589,0.589l3.141-1.276
+		l2.16-3.239l0.785-0.491l-1.963-0.294l0.785-1.571l-0.196-1.374l1.963-0.491l1.08-1.276l0.589,0.785c0,0-0.196,2.945,0.589,2.945
+		s3.927,0.589,3.927,0.589l3.828,1.865l0.884,1.374h2.749l1.08,0.884l2.16-2.945v-1.374h-1.178l-3.239-2.651l-5.497-0.785
+		l-3.043-2.16l1.08-2.65l2.16,0.294l0.196-0.589l-1.669-0.883v-0.491h3.043l1.669-2.945l-1.178-1.865l-0.294-2.65l-1.374,0.196
+		l-1.865,2.061l-0.589,2.454l-2.847-0.589l-0.883-1.669l1.669-1.865l1.865-1.669L573.643,467.109L573.643,467.109z"
+												stroke-width="0.7"></path>
+	<path id="path107" fill="#1e8346" stroke="#b6b6bf" stroke-miterlimit="10"
+												d="M654.236,357.557l-4.516,0.785l-7.853,1.08
+		l-8.05,0.883v2.061l0.196,1.963l0.589,3.239l3.141,7.559l2.258,9.424l1.374,5.89l1.571,4.614l1.374,6.675l1.963,5.988l2.454,3.239
+		l0.491,3.239l1.865,0.785l0.196,1.963l-1.669,4.614l-0.491,3.141l-0.196,1.865l1.472,4.221l0.294,5.105l-0.785,2.356l0.589,0.785
+		l1.374,0.785l0.589,3.239l2.454,3.73l1.374,1.374l7.461,0.196l10.209-0.589l20.124-1.276l5.105-0.687h4.319l0.196,2.749
+		l2.454,0.785l0.294-4.221l-1.472-4.319l1.08-1.571l5.497,0.785l4.712,0.294l-1.08-5.89l2.16-9.62l1.374-4.025l-0.491-2.454
+		l3.828-6.675l-0.589-1.571l-1.669,0.883l-2.454-1.276l-0.589-1.963l-1.178-3.436l-2.16-1.963l-2.454-0.589l-1.571-4.614
+		l-2.552-5.694l-3.927-1.865l-1.963-1.865l-1.178-2.454l-1.963-1.865l-2.16-1.276l-2.16-2.749l-2.847-2.16l-4.221-1.669
+		l-0.491-1.374l-2.258-2.749l-0.589-1.472l-3.141-4.908l-3.239,0.196l-3.828-2.552l-1.178-1.276l-0.294-1.669l0.785-1.865
+		l2.16-0.883l-0.196-2.16l-1.669,0.491l-5.497,0.982l-6.479,0.883L654.236,357.557L654.236,357.557z"
+												stroke-width="0.7"></path>
+	<path id="path110" fill="#1e8346" stroke="#b6b6bf" stroke-miterlimit="10"
+												d="M594.356,461.219l-1.472-14.43l-2.552-17.866
+		l0.196-13.35l0.785-29.646l-0.196-15.805l0.196-6.086l7.264-0.393l26.014-2.454l9.522-0.883l-0.098,2.061l0.196,1.963l0.589,3.239
+		l3.141,7.559l2.258,9.424l1.374,5.89l1.571,4.614l1.374,6.675l1.963,5.988l2.454,3.239l0.491,3.239l1.865,0.785l0.196,1.963
+		l-1.669,4.614l-0.491,3.141l-0.196,1.865l1.472,4.221l0.294,5.105l-0.785,2.356l0.589,0.785l1.374,0.785l0.785,3.436h-5.89
+		l-6.381,0.589l-23.952,2.749l-9.62,1.276l-0.294,2.945l1.669,1.669l2.454,1.865l0.589,7.559l-6.184,2.454l-2.552-0.294l2.552-1.865
+		v-0.883l-2.847-5.694l-2.16-0.589l-1.374,4.221l-1.178,2.65l-0.589-0.196L594.356,461.219L594.356,461.219L594.356,461.219z"
+												stroke-width="0.7"></path>
+	<path id="path113" fill="#1e8346" stroke="#b6b6bf" stroke-miterlimit="10"
+												d="M787.545,300.916l1.571,4.516l3.338,6.184
+		l2.258,2.356l0.589,2.16l-2.258,0.196l0.785,0.589l-0.294,4.025l-2.454,1.276l-0.589,1.963l-1.178,2.749l-3.534,1.571l-2.258-0.294
+		l-1.374-0.196l-1.571-1.276l0.294,1.276v0.883h1.865l0.785,1.276l-1.865,5.988h3.927l0.589,1.571l2.16-2.16l1.178-0.491
+		l-1.865,3.436l-2.847,4.614h-1.178l-1.08-0.491l-2.552,0.589l-4.908,2.356l-6.086,5.105l-3.141,4.516l-1.865,6.184l-0.491,2.356
+		l-4.417,0.491l-5.301,1.865l-9.326-7.853l-11.78-7.264l-2.749-0.785l-11.78,1.374l-4.123,0.491l-1.571-3.141l-2.16-1.865
+		l-15.412,0.491l-6.872,0.785l-8.54,4.319l-5.792,2.454l-1.472,0.294l-5.497,0.982l-6.577,0.785l-6.381,0.491l0.294-4.614
+		l1.669-1.374l2.552-0.589l0.589-3.534l3.927-2.65l3.632-1.374l3.927-3.436l4.123-1.963l0.589-2.945l3.632-3.73l0.589-0.196
+		c0,0,0,1.08,0.785,1.08s1.865,0.294,1.865,0.294l2.16-3.436l1.963-0.589l2.16,0.294l1.472-3.436l2.749-2.454l0.491-1.963v-3.828
+		l4.221,0.687l6.675-1.276l14.725-1.865l16.001-2.454l19.24-3.632l17.964-3.632l10.7-2.749L787.545,300.916L787.545,300.916z
+		 M791.177,332.329l2.454-2.356l2.945-2.454l1.472-0.589l0.196-1.963l-0.589-5.89l-1.374-2.258l-0.589-1.767l0.687-0.196
+		l2.552,5.301l0.393,4.221l-0.196,3.239l-3.141,1.472l-2.65,2.356l-1.178,1.08L791.177,332.329L791.177,332.329z"
+												stroke-width="0.7"></path>
+	<path id="path116" fill="#1e8346" stroke="#b6b6bf" stroke-miterlimit="10"
+												d="M661.108,322.021l-48.592,4.81l-14.725,1.669
+		l-4.319,0.491h-3.632v3.73l-7.853,0.491l-6.577,0.589l-10.307,0.098l-0.196,5.595l-2.061,5.988l-0.982,2.847l-1.276,4.221
+		l-0.294,2.454l-3.73,2.061l1.374,3.436l-0.883,4.221l-1.472,1.669l7.657-0.098l22.578-1.865l5.006-0.196l7.559-0.491l26.014-2.454
+		l9.522-0.785l7.951-0.883l7.853-1.08l4.516-0.785l0.294-4.614l1.669-1.374l2.552-0.589l0.589-3.534l3.927-2.65l3.632-1.374
+		l3.927-3.436l4.123-1.963l0.589-2.945l3.632-3.73l0.589-0.196c0,0,0,1.08,0.785,1.08s1.865,0.294,1.865,0.294l2.16-3.436
+		l1.963-0.589l2.16,0.294l1.472-3.436l2.749-2.454l0.491-1.963l0.196-3.73l-2.16,0.098l-2.258,1.865l-7.461,0.196l-11.191,1.767
+		L661.108,322.021L661.108,322.021z"
+												stroke-width="0.7"></path>
+	<path id="path119" fill="#1e8346" stroke="#b6b6bf" stroke-miterlimit="10"
+												d="M553.303,95.275l1.767-1.963l2.061-0.785l5.105-3.73
+		l2.16-0.589l0.393,0.393l-4.81,4.908l-3.141,1.865l-1.963,0.883L553.303,95.275L553.303,95.275z M633.896,125.805l0.589,2.356
+		l3.043,0.196l1.178-1.178c0,0-0.098-1.374-0.393-1.571c-0.294-0.196-1.472-1.767-1.472-1.767l-2.061,0.196l-1.472,0.196
+		l-0.294,1.08L633.896,125.805L633.896,125.805z M661.971,185.784l-3.043-7.853l-2.16-8.639l-2.258-3.141l-2.454-1.669l-1.571,1.08
+		l-3.632,1.669l-1.865,4.81l-2.552,3.534l-1.08,0.589l-1.374-0.589c0,0-2.454-1.374-2.258-1.963s0.491-4.81,0.491-4.81l3.239-1.276
+		l0.785-3.239l0.589-2.454l2.258-1.571l-0.294-9.62l-1.472-2.16l-1.178-0.785l-0.785-2.061l0.785-0.785l1.571,0.294l0.196-1.571
+		l-2.258-2.16l-1.178-2.454h-2.454l-4.221-1.374l-5.203-3.239h-2.356l-0.589,0.589l-0.883-0.491l-2.847-2.16l-2.749,1.669
+		l-2.749,2.16l0.294,3.436l0.883,0.294l1.963,0.491l0.491,0.785l-2.454,0.785l-2.454,0.294l-1.374,1.669l-0.294,1.963l0.294,1.571
+		l0.294,5.301l-3.338,1.963l-0.589-0.196v-4.025l1.178-2.356l0.589-2.356l-0.785-0.785l-1.865,0.785l-0.883,4.025l-2.552,1.08
+		l-1.669,1.865l-0.196,0.883l0.589,0.785l-0.589,2.454l-2.16,0.491v1.08l0.785,2.356l-1.08,5.89l-1.472,3.828l0.589,4.516
+		l0.491,1.08l-0.785,2.356l-0.294,0.785l-0.294,2.65l3.338,5.694l2.749,6.184l1.374,4.614l-0.785,4.516l-0.884,5.694l-2.258,4.908
+		l-0.294,2.65l-2.945,2.945l-0.687,0.785l4.319-0.196l20.615-2.16l5.792-0.589l0.294,1.178l7.264-1.178l9.62-1.571l4.908-0.491
+		l-1.276-1.08l0.196-1.374l1.963-3.534l1.865-1.669l-0.196-4.81l1.472-1.571l0.982-0.294l0.196-3.436l1.472-2.945l0.982,0.589
+		l0.196,0.589l0.785,0.196l1.865-0.883L661.971,185.784L661.971,185.784z M538.97,123.351l1.767-0.982l2.552-0.785l3.338-2.16
+		v-0.883l0.589-0.589l5.595-0.883l2.258-1.865l4.123-2.061l0.196-1.276l1.865-2.749l1.669-0.785l1.178-1.669l2.16-2.16l4.123-2.356
+		l4.417-0.491l1.08,1.08l-0.294,0.883l-3.534,0.883l-1.374,2.945l-2.16,0.785l-0.491,2.356l-2.258,3.141l-0.294,2.454l0.785,0.491
+		l0.883-1.08l3.338-2.749l1.178,1.276h2.16l3.043,0.883l1.374,1.08l1.374,2.945l2.552,2.65l3.632-0.196l1.374-0.883l1.472,1.276
+		l1.472,0.491l1.178-0.785h1.08l1.571-0.883l3.828-3.436l3.141-1.08l6.184-0.294l4.221-1.865l2.454-1.276l1.374,0.196v5.399
+		l0.491,0.294l2.749,0.785l1.865-0.491l5.792-1.571l1.08-1.08l1.374,0.491v6.675l3.043,2.945l1.178,0.589l1.178,0.883l-1.178,0.295
+		l-0.785-0.295l-3.534-0.491l-1.963,0.589l-2.16-0.196l-3.043,1.374h-1.669l-5.497-1.276l-4.81,0.196l-1.865,2.454l-6.577,0.589
+		l-2.258,0.785l-1.08,2.945l-1.178,1.08l-0.491-0.196l-1.374-1.571l-4.221,2.356h-0.589l-1.08-1.571l-0.785,0.196l-1.865,4.221
+		l-0.883,3.828l-3.534,7.755l-1.571-1.08l-1.276-1.276l-1.472-9.816l-3.436-1.08l-1.276-2.16l-11.682-2.65l-2.356-1.08l-7.755-2.16
+		l-7.755-1.08L538.97,123.351L538.97,123.351z"
+												stroke-width="0.7"></path>
+	<path id="path122" fill="#1e8346" stroke="#b6b6bf" stroke-miterlimit="10"
+												d="M594.258,461.416l-1.08,1.178h-4.908l-1.374-0.785
+		l-1.963-0.294l-6.381,1.865l-1.669-0.785l-2.454,4.025l-1.08,0.785l-1.08-2.356l-1.08-3.73l-3.239-3.043l1.08-7.264l-0.687-0.883
+		l-1.767,0.196l-7.755,0.687l-22.676,0.687l-0.393-1.571l0.687-7.657l3.239-5.89l4.908-8.737l-0.883-1.963h1.08l0.687-3.043
+		l-2.16-1.767l0.196-1.767l-1.963-4.417l-0.294-5.105l1.276-2.552l-0.393-4.123l-1.276-2.847l1.276-1.276l-1.276-1.963l0.393-1.767
+		l0.884-5.89l2.749-2.65l-0.687-1.963l3.436-5.006l2.552-0.883v-1.963l-0.687-1.276l2.552-5.006l2.552-1.08l0.098-3.239l8.148-0.098
+		l22.578-1.865l5.203-0.196v6.086l0.196,15.805l-0.785,29.646l-0.196,13.35l2.552,17.866L594.258,461.416L594.258,461.416z"
+												stroke-width="0.7"></path>
+	<path id="path125" fill="#1e8346" stroke="#b6b6bf" stroke-miterlimit="10"
+												d="M587.877,304.057l-0.196-3.73l0.491-4.319
+		l2.16-2.749l1.669-3.73l2.454-4.025l-0.491-5.595l-1.669-2.65L592,274.118l0.785-5.301l-0.491-6.675l-1.178-15.216l-1.178-14.627
+		l-0.883-11.093l2.847,0.883l1.374,0.883l1.08-0.294l1.963-1.865l2.651-1.571l4.81-0.196l20.615-2.16l5.792-0.589l0.196,1.08
+		l1.374,13.939l1.669,13.056l2.454,22.382l0.491,5.399l-0.491,2.16l1.374,1.374l0.294,1.865l-2.552,1.865l-3.632,1.669l-2.552,0.294
+		l-0.491,4.319l-4.417,3.73l-2.749,3.436l0.294,2.16l-0.785,1.963h-4.417l-1.08-1.571l-1.08,0.785l-2.749,1.571l0.196,3.239
+		l-1.963,0.491l-0.785-1.08l-1.865-1.571l-2.749,1.374l-1.669,3.141l-1.669-0.785l-1.374-1.865l-3.338,0.491l-5.497,0.883
+		L587.877,304.057L587.877,304.057z"
+												stroke-width="0.7"></path>
+	<path id="path128" fill="#1e8346" stroke="#b6b6bf" stroke-miterlimit="10"
+												d="M587.681,303.959v-3.534l0.491-4.319l2.16-2.749
+		l1.669-3.73l2.454-4.025l-0.491-5.595l-1.669-2.65L592,274.216l0.785-5.301l-0.491-6.675l-1.178-15.216l-1.178-14.627
+		l-0.785-10.994l-1.178-0.785l-0.785-2.454l-1.178-3.534l-1.472-1.669l-1.374-2.454l-0.196-5.203l-9.326,1.276l-25.523,1.669
+		l-8.148-0.393l0.196,2.258l2.16,0.687l0.883,1.08l0.393,1.767l3.632,3.239l0.687,2.16l-0.687,3.239l-1.669,3.534l-0.687,2.454
+		l-2.16,1.669l-1.767,0.687l-4.908,1.276l-0.687,1.767l-0.687,1.963l0.687,1.276l1.669,1.571l-0.196,3.927l-1.767,1.571
+		l-0.687,1.571v2.65l-1.767,0.393l-1.472,1.08l-0.196,1.276l0.196,1.963l-1.669,1.276l-0.982,2.65l0.393,3.534l2.16,6.97
+		l6.872,7.264l5.203,3.534l-0.196,4.123l0.884,1.276l5.988,0.393l2.552,1.276l-0.687,3.534l-2.16,5.694l-0.687,3.043l2.16,3.73
+		l5.988,5.006l4.319,0.687l1.963,4.81l1.963,3.043l-0.884,2.847l1.472,3.927l1.767,1.963l2.749-0.294l0.589-1.963l2.16-1.669
+		l1.963-0.589l2.552,1.276l3.338,1.276l1.08-0.294l0.196-2.16l-1.178-2.356l0.294-2.16l1.865-1.374l2.454-0.589l1.472-0.589
+		l-0.785-1.669l-0.589-1.865l1.08-0.785L587.681,303.959L587.681,303.959z"
+												stroke-width="0.7"></path>
+	<path id="path131" fill="#1e8346" stroke="#b6b6bf" stroke-miterlimit="10"
+												d="M721.283,409.781l-1.669,0.883l-2.454-1.276
+		l-0.589-1.963l-1.178-3.436l-2.16-1.963l-2.454-0.589l-1.571-4.614l-2.552-5.694l-3.927-1.865l-1.963-1.865l-1.178-2.454
+		l-1.963-1.865l-2.16-1.276l-2.16-2.749l-2.847-2.16l-4.221-1.669l-0.491-1.374l-2.258-2.749l-0.393-1.178l-3.141-4.908
+		l-3.239,0.196l-3.828-2.552l-1.178-1.276l-0.294-1.669l0.785-1.865l2.16-0.883l-0.294-1.963l5.792-2.454l8.54-4.319l6.872-0.785
+		l15.412-0.491l2.16,1.865l1.571,3.141l4.123-0.491l11.78-1.374l2.749,0.785l11.78,7.264l9.522,7.755l-5.105,5.203l-2.454,5.89
+		l-0.491,5.988l-1.472,0.785l-1.08,2.65l-2.258,0.589l-1.963,3.436l-2.552,2.65l-2.16,3.239l-1.571,0.785l-3.338,3.239l-2.749,0.196
+		l0.883,3.141l-4.712,5.301L721.283,409.781L721.283,409.781z"
+												stroke-width="0.7"></path>
+	<path id="path134" fill="#1e8346" stroke="#b6b6bf" stroke-miterlimit="10"
+												d="M783.912,197.941l-1.08-0.883l-2.454-0.196
+		l-2.16-1.865l-2.258-5.105l-2.847-0.883l-2.16-2.061l-17.375,3.828l-40.248,8.344l-8.344,1.374l-0.685-6.676l2.552-1.767
+		l1.178-1.08l0.884-1.571l1.669-1.08l1.865-1.669l0.491-1.571l1.963-2.65l1.08-0.883l-0.196-0.883l-1.178-2.945l-1.669-0.196
+		l-1.865-5.89l2.749-1.669l4.123-1.374l3.828-1.276l3.043-0.491l5.89-0.196l1.865,1.276l1.472,0.196l1.963-1.276l2.454-1.08
+		l4.908-0.491l1.963-1.669l1.669-3.141l1.472-1.865h1.963l1.865-1.08l0.196-2.16l-1.374-1.963L750.83,152l1.08-1.963v-1.374h-1.669
+		l-1.669-0.785l-0.785-1.08l-0.196-2.454l5.497-5.301l0.589-0.785l1.374-2.749l2.749-4.319l2.552-3.534l1.963-2.356l2.258-1.767
+		l2.945-1.178l5.203-1.276l3.043,0.196l4.221-1.374l7.068-1.963l0.491,4.81l2.258,6.184l0.785,4.908l-0.884,3.73l2.454,4.319
+		l0.785,1.963l-0.785,2.749l2.749,1.276l0.589,0.294l2.847,10.406l0.491,4.908l-0.491,10.406l0.785,5.301l0.785,3.436l1.374,6.97
+		v7.755l-1.08,2.16l1.767,1.865l-0.196,1.472l-1.865,1.571l0.294,1.276l1.178-0.294l1.374-1.276l2.16-2.454l1.08-0.589l1.473,0.589
+		l2.16,0.196l7.461-3.73l2.749-2.65l1.178-1.374l3.927,1.571l-3.141,3.436l-3.632,2.749l-6.675,5.105l-2.454,0.883l-5.497,1.865
+		l-3.828,1.08l-1.374-0.491l-0.589-3.239l0.491-2.65l-0.196-2.061l-2.454-1.08l-4.221-0.883l-3.73-0.883L783.912,197.941
+		L783.912,197.941z"
+												stroke-width="0.7"></path>
+	<path id="path137" fill="#1e8346" stroke="#b6b6bf" stroke-miterlimit="10"
+												d="M779.79,232.789l1.08-0.589l2.16-1.276l1.374-2.65
+		l1.472-2.16l3.043-2.945v-0.785l-2.258-1.571l-3.338-2.356l-0.883-2.454l-2.552-0.294l-0.196-1.08l-0.785-2.65l2.16-1.08
+		l0.196-2.356l-1.178-1.276l0.196-1.571l1.865-2.945v-2.945l2.16-2.356l-1.276-0.883l-2.454-0.196l-2.16-1.865l-2.258-5.105
+		l-2.847-0.883l-2.16-2.061l-17.375,3.828l-40.248,8.344l-8.344,1.374l-0.491-6.773l-5.203,5.399l-1.178,0.491l-3.927,2.847
+		l2.749,18.259l1.571,10.307l3.338,18.357l4.319-0.687l11.093-1.472l35.438-7.362l13.841-2.65l7.755-1.571l1.178-1.178l1.963-1.571
+		L779.79,232.789L779.79,232.789L779.79,232.789z"
+												stroke-width="0.7"></path>
+	<path id="path140" fill="#1e8346" stroke="#b6b6bf" stroke-miterlimit="10"
+												d="M685.257,300.425l-2.945,3.043l-3.927,3.436
+		l-4.221,5.105l-1.669,1.669v1.963l-3.632,1.963l-5.301,3.239l-2.454,1.374l-48.592,4.712l-14.725,1.669l-4.319,0.491h-3.632v3.73
+		l-7.853,0.491l-6.577,0.589l-9.817,0.196l0.982-1.178l2.061-1.669l1.963-1.08l0.196-3.043l0.883-1.767l-1.472-2.454l0.785-1.865
+		l2.16-1.669l1.963-0.589l2.552,1.276l3.338,1.276l1.08-0.294l0.196-2.16l-1.178-2.356l0.294-2.16l1.865-1.374l2.454-0.589
+		l1.472-0.589l-0.785-1.669l-0.589-1.865l1.08-0.785l0.982-3.141l2.847-1.669l5.497-0.883l3.338-0.491l1.374,1.865l1.669,0.785
+		l1.669-3.141l2.749-1.374l1.865,1.571l0.785,1.08l1.963-0.491l-0.196-3.239l2.749-1.571l1.08-0.785l1.08,1.571h4.417l0.785-1.963
+		l-0.294-2.16l2.749-3.436l4.417-3.73l0.491-4.319l2.552-0.294l3.632-1.669l2.552-1.865l-0.294-1.865l-1.374-1.374l0.491-2.061
+		l3.828-0.196l2.258-0.785l2.749,1.571l1.571,4.221l5.497,0.294l1.669,1.669l1.963,0.196l2.258-1.374l2.847,0.491l1.178,1.374
+		l2.552-2.454l1.669-1.276h1.571l0.589,2.65l1.669,0.883l3.338,2.061l0.196,5.301l0.785,1.571l2.454,1.374l0.589,2.16l2.749,3.534
+		l2.454,2.65L685.257,300.425L685.257,300.425z"
+												stroke-width="0.7"></path>
+	<path id="path143" fill="#1e8346" stroke="#b6b6bf" stroke-miterlimit="10"
+												d="M694.288,202.26l-6.675,4.025l-3.632,2.16
+		l-3.141,3.534l-3.828,3.73l-3.043,0.785l-2.749,0.491l-5.203,2.454l-1.963,0.196l-3.239-2.945l-4.908,0.589l-2.258-1.374
+		l-2.258-1.276l-4.614,0.687l-9.62,1.571l-7.264,1.178l1.178,13.939l1.669,13.056l2.454,22.382l0.491,5.497l3.828-0.196l2.258-0.785
+		l2.749,1.571l1.571,4.221l5.497,0.294l1.669,1.669l1.963,0.196l2.258-1.374l2.847,0.491l1.178,1.374l2.552-2.454l1.669-1.276h1.571
+		l0.589,2.65l1.669,0.883l3.239,2.258l2.061-0.098l1.865-0.785l0.196-2.65l1.571-1.374l0.196-4.81l0.883-3.73l1.178-0.589
+		l1.178,1.08l0.491,1.669l1.669-0.883l0.491-1.571l-1.08-1.669v-2.356l0.884-1.276l2.16-3.239l1.178-1.374l1.963,0.491l2.16-1.571
+		l2.847-3.239l2.16-3.73l0.294-5.399l0.491-4.81v-4.516l-1.08-2.945l0.883-1.374l1.276-0.687l-1.767-10.307L694.288,202.26
+		L694.288,202.26z"
+												stroke-width="0.7"></path>
+	<path id="path146" fill="#1e8346" stroke="#b6b6bf" stroke-miterlimit="10"
+												d="M685.355,299.64l1.767,3.436l1.178,1.276
+		l2.749,0.785l2.454-0.589l2.258-2.16c0,0,1.669,1.374,2.258,1.276c0.589-0.196,4.123-0.883,4.123-0.883l1.669-4.516l2.454,0.883
+		l3.043-2.356l1.374,0.294l1.963-1.865l0.196-2.65l-0.785-1.276l4.712-10.307l1.963-6.381l0.294-4.123l1.669-0.196l1.472,2.65
+		l1.178,0.785h2.454l1.08-5.301l0.294-2.945l3.141-0.294l0.491-2.16l2.847-2.356l0.589-1.571l1.571-2.65l0.491-1.963l0.196-5.105
+		l4.221,1.669l5.301,2.945l0.785-4.908l3.927,1.963v2.749l5.203,1.276l1.865,1.276l0.883-1.865l2.16,1.571l-1.374,3.141l-0.294,2.65
+		l-1.669,2.454v2.061l0.589,1.669l4.712,1.276l1.767,1.472l4.908,0.294l2.454,2.16l3.043,0.589l1.178,1.276l-0.491,4.319
+		l0.884,0.883l0.196,2.16l1.178,2.061l-0.196,1.669l-3.043-1.08v0.883l1.865,1.571v1.08l1.374,1.08l1.178,1.571l0.196,2.16
+		l-2.16,1.374l0.294,0.491l2.454-0.491l3.043-0.589l1.08-0.196l3.828,6.675l-4.614,1.669l-10.7,2.749l-17.964,3.632l-19.24,3.632
+		l-16.001,2.454l-14.725,1.865l-6.675,1.276l-4.221-0.589h-1.963l-2.258,1.865l-7.461,0.196l-11.191,1.767l-9.424,0.883l2.552-1.276
+		l5.301-3.239l3.632-1.963v-1.963l1.669-1.669l4.221-5.105l3.927-3.436L685.355,299.64L685.355,299.64z"
+												stroke-width="0.7"></path>
+	<path id="path149" fill="#1e8346" stroke="#b6b6bf" stroke-miterlimit="10"
+												d="M791.864,258.999l-5.792,1.276l-4.712,0.196
+		l-1.472-5.988l-1.963-9.326l-2.16-5.399l-1.178-4.221l-7.755,1.571l-13.841,2.65l-35.045,7.264l1.08,4.81l0.884,5.399l0.294-0.294
+		l1.963-2.356l2.16-2.945l2.258-0.196l1.374-1.374l1.669-2.454l1.178,0.589l2.749-0.294l2.454-1.963l1.865-1.374l1.767-0.491
+		l1.571,1.08l2.749,1.374l1.865,1.669l1.178,1.472l3.927,1.669v2.749l5.203,1.276l1.865,1.276l0.883-1.865l2.16,1.571l-1.374,3.141
+		l-0.294,2.65l-1.669,2.454v2.061l0.589,1.669l4.712,1.276l4.025-0.098l2.847,0.883l1.963,0.294l0.883-2.061l-1.374-1.963v-1.767
+		l-2.258-1.963l-1.963-5.301l1.178-5.105l-0.196-1.963l-1.178-1.276c0,0,1.374-1.571,1.374-2.16s0.491-1.963,0.491-1.963
+		l1.865-1.276l1.865-1.571l0.491,0.883l-1.374,1.571l-1.178,3.534l0.294,1.08l1.669,0.294l0.491,5.301l-1.963,0.883l0.294,3.436
+		l0.491-0.196l1.08-1.865l1.472,1.669l-1.472,1.276l-0.294,3.239l2.454,3.239l3.632,0.491l1.571-0.785l3.043,4.908l1.669,0.491
+		v3.436l-2.16,4.614l-0.491,6.675l1.374,3.239l1.374,0.196l1.865-4.025l0.785-3.436l0.196-6.773l2.847-4.614l1.963-6.675
+		L791.864,258.999L791.864,258.999L791.864,258.999z M776.55,268.227l1.08,2.356l0.196,1.669l1.08,1.767
+		c0,0,0.785-0.883,0.785-1.178c0-0.294-0.687-2.945-0.687-2.945l-0.687-2.258L776.55,268.227L776.55,268.227z"
+												stroke-width="0.7"></path>
+	<path id="path152" fill="#1e8346" stroke="#b6b6bf" stroke-miterlimit="10"
+												d="M717.946,247.023l1.08,4.712l0.884,5.399
+		l0.294-0.294l1.963-2.356l2.16-2.945l2.258-0.196l1.374-1.374l1.669-2.454l1.178,0.589l2.749-0.294l2.454-1.963l1.865-1.374
+		l1.767-0.491l1.571,1.08l2.749,1.374l1.865,1.669l1.276,1.276l-0.982,4.81l-5.301-2.945l-4.221-1.669l-0.196,5.105l-0.491,1.963
+		l-1.571,2.65l-0.589,1.571l-2.847,2.356l-0.491,2.16l-3.141,0.294l-0.294,2.945l-1.08,5.301h-2.552l-1.178-0.785l-1.472-2.65
+		l-1.669,0.196l-0.294,4.123l-1.963,6.381l-4.712,10.307l0.785,1.276l-0.196,2.65l-1.963,1.865l-1.374-0.294l-3.043,2.356
+		l-2.454-0.883l-1.669,4.516c0,0-3.534,0.785-4.123,0.883c-0.589,0.196-2.258-1.276-2.258-1.276l-2.258,2.16l-2.454,0.589
+		l-2.749-0.785l-1.178-1.276l-2.061-2.945l-2.945-1.865l-2.454-2.65l-2.749-3.534l-0.589-2.16l-2.454-1.374l-0.785-1.571
+		l-0.196-5.006l2.061-0.098l1.865-0.785l0.196-2.65l1.472-1.374l0.196-4.81l0.883-3.73l1.178-0.589l1.178,1.08l0.491,1.669
+		L684.08,270l0.491-1.571l-1.08-1.669v-2.357l0.884-1.276l2.16-3.239l1.178-1.374l1.963,0.491l2.16-1.571l2.847-3.239l2.16-3.73
+		l0.294-5.399l0.491-4.81v-4.418l-1.08-2.945l0.883-1.374l1.178-1.276l3.239,18.848l4.319-0.687L717.946,247.023L717.946,247.023z"
+												stroke-width="0.7"></path>
+	<path id="path155" fill="#1e8346" stroke="#b6b6bf" stroke-miterlimit="10"
+												d="M783.912,197.941l-1.963,2.356v2.945l-1.865,2.945
+		l-0.196,1.571l1.178,1.276l-0.196,2.356l-2.16,1.08l0.785,2.65l0.196,1.08l2.552,0.294l0.883,2.454l3.338,2.356l2.258,1.571v0.785
+		l-3.043,2.945l-1.472,2.16l-1.374,2.65l-2.16,1.276l-1.178,0.687l-0.196,1.178l-0.589,2.454l0.982,2.16l3.043,2.749l4.516,2.16
+		l3.828,0.589l0.196,1.374l-0.785,0.883l0.294,2.65h0.785l1.963-2.356l0.785-4.614l2.552-3.828l2.847-6.184l1.08-5.301l-0.589-1.08
+		l-0.196-8.933l-1.571-3.239l-1.08,0.785l-2.552,0.294l-0.491-0.491l1.08-0.883l1.963-1.865l0.098-1.08l-0.393-3.239l0.491-2.65
+		l-0.196-2.061l-2.454-1.08l-4.221-0.883l-3.338-1.178L783.912,197.941L783.912,197.941z"
+												stroke-width="0.7"></path>
+	<path id="path158" fill="#1e8346" stroke="#b6b6bf" stroke-miterlimit="10"
+												d="M872.752,90.352l1.865,1.963l2.16,3.534v1.865
+		l-1.963,4.516l-1.865,0.589l-3.141,2.945l-4.516,5.301c0,0-0.589,0-1.178,0s-0.884-1.963-0.884-1.963l-1.669,0.196l-0.883,1.374
+		l-2.258,1.374l-0.883,1.374l1.472,1.374l-0.491,0.589l-0.491,2.65l-1.865-0.196v-1.571l-0.294-1.276l-1.374,0.294l-1.669-3.141
+		l-1.963,1.276l1.178,1.374l0.294,1.08l-0.785,1.276l0.294,2.945l0.098,1.571l-1.472,2.454l-2.749,0.491l-0.294,2.749l-5.006,2.945
+		l-1.178,0.491l-1.571-1.374l-2.847,3.436l0.884,3.043l-1.374,1.276l-0.196,4.221l-1.472,7.264l-2.356-1.08l-0.491-2.945
+		l-3.436-1.374l-0.294-2.65l-6.872-22.382l-4.516-14.038l2.258-0.294l1.374,0.393v-2.454l0.785-5.301l2.454-4.516l1.374-3.828
+		l-1.865-2.356v-5.694l0.785-0.883l0.785-2.65l-0.196-1.374l-0.196-4.614l1.669-4.614l2.749-8.54l1.963-4.025h1.178l1.178,0.196
+		v1.08l1.178,2.16l2.552,0.589l0.785-0.785v-0.883l3.828-2.749l1.669-1.669l1.374,0.196l5.595,2.356l1.767,0.883l8.933,28.37h5.595
+		l0.785,1.865l0.196,4.614l2.749,2.16h0.785l0.196-0.491l-0.491-1.08L872.752,90.352L872.752,90.352z M853.217,119.016l1.472-1.472
+		l1.276,0.982l0.491,2.356l-1.571,0.883L853.217,119.016L853.217,119.016z M859.5,113.421l1.669,1.767c0,0,1.178,0.098,1.178-0.196
+		s0.196-1.963,0.196-1.963l0.785-0.785l-0.785-1.669l-1.865,0.687L859.5,113.421z"
+												stroke-width="0.7"></path>
+	<path id="path161" fill="#1e8346" stroke="#b6b6bf" stroke-miterlimit="10"
+												d="M799.423,164.27l-0.785-5.399l-2.749-10.405
+		l-0.589-0.295l-2.65-1.276l0.785-2.749l-0.785-1.963l-2.356-4.319l0.883-3.73l-0.785-4.908l-2.16-6.184l-0.785-4.712l24.247-6.872
+		l0.294,5.595l1.767,2.65v3.828l-3.338,3.828l-2.356,1.08v1.08l1.08,1.669v8.246l-0.785,8.835l-0.196,4.614l0.884,1.276
+		l-0.196,4.319l-0.491,1.669l1.276,1.963l-6.283,1.276L799.423,164.27L799.423,164.27z"
+												stroke-width="0.7"></path>
+	<path id="path164" fill="#1e8346" stroke="#b6b6bf" stroke-miterlimit="10"
+												d="M833.584,152.785l0.294-1.472l0.982-3.141
+		l-2.356-0.883l-0.491-2.945l-3.632-1.08l-0.294-2.65l-6.872-22.382l-4.319-13.841h-0.883l-0.589,1.571l-0.589-0.491l-0.884-0.883
+		l-1.374,1.865l-0.883,5.203l0.294,5.399l1.865,2.65v3.828l-3.534,3.828l-2.454,1.08v1.08l1.08,1.669v8.246l-0.785,8.835
+		l-0.196,4.614l0.884,1.276l-0.196,4.319l-0.491,1.669l1.374,1.963l16.197-3.927l2.16-0.589l1.963-3.043L833.584,152.785
+		L833.584,152.785z"
+												stroke-width="0.7"></path>
+	<path id="path167" fill="#1e8346" stroke="#b6b6bf" stroke-miterlimit="10"
+												d="M850.959,182.234l2.061-0.687l0.393-1.669
+		l0.982,0.098l0.982,2.16l-1.178,0.393l-3.632,0.098L850.959,182.234z M842.321,182.922l2.16-2.552h1.472l1.767,1.374l-2.258,0.982
+		l-2.061,0.982L842.321,182.922L842.321,182.922z M809.73,162.012l16.295-4.025l2.16-0.589l1.963-3.043l3.534-1.571l2.749,4.221
+		l-2.258,4.908l-0.294,1.374l1.865,2.454l1.08-0.785h1.669l2.16,2.454l3.632,5.694l3.338,0.491l2.16-0.883l1.669-1.669l-0.785-2.65
+		l-1.963-1.571l-1.374,0.785l-0.884-1.276l0.491-0.491l1.963-0.196l1.669,0.785l1.767,2.356l0.884,2.749l0.294,2.356l-3.927,1.374
+		l-3.632,1.865l-3.632,4.319l-1.865,1.374v-0.982l2.258-1.374l0.491-1.669l-0.785-2.945l-2.749,1.374l-0.785,1.374l0.491,2.16
+		l-2.552,1.374l-2.552-4.319l-3.141-4.221l-1.571-1.08l-5.399,1.472l-4.81,0.982l-20.418,4.516l-0.883-5.497l0.589-10.111
+		l4.908-0.883L809.73,162.012"
+												stroke-width="0.7"></path>
+	<path id="path170" fill="#1e8346" stroke="#b6b6bf" stroke-miterlimit="10"
+												d="M827.203,187.83l-0.884-4.025l-0.785-4.221
+		l-1.472-5.694l-4.908,1.08l-20.418,4.516l0.589,3.141l1.374,6.97v7.755l-1.08,2.16l1.767,2.061l4.614-3.239l3.338-3.141
+		l1.865-1.963l0.785,0.588l2.552-1.374l4.908-1.08L827.203,187.83L827.203,187.83z"
+												stroke-width="0.7"></path>
+	<path id="path173" fill="#1e8346" stroke="#b6b6bf" stroke-miterlimit="10"
+												d="M826.712,187.83l-0.491-4.025l-0.785-4.221
+		l-1.571-5.595l5.399-1.472l1.571,1.08l3.141,4.221l2.749,4.221l-2.749,1.472l-1.178-0.196l-1.08,1.669l-2.258,1.865L826.712,187.83
+		z"
+												stroke-width="0.7"></path>
+	<path id="path176" fill="#1e8346" stroke="#b6b6bf" stroke-miterlimit="10"
+												d="M778.71,236.127l0.785-1.963l0.196-1.276h-1.865
+		l-1.963,1.571l-1.374,1.374l1.374,4.025l2.16,5.399l1.963,9.326l1.473,5.988l4.712-0.196l5.792-1.178l-2.16-7.068l-0.883,0.491
+		l-3.338-2.356l-1.669-4.516l-1.865-3.436l-2.16-0.883l-1.963-3.436L778.71,236.127L778.71,236.127z"
+												stroke-width="0.7"></path>
+	<path id="path182" fill="#1e8346" stroke="#b6b6bf" stroke-miterlimit="10"
+												d="M234.679,547.801l1.472-2.749l1.767-0.294
+		l0.294,0.589l-1.669,2.356L234.679,547.801L234.679,547.801z M242.532,544.954l4.712,1.963l1.669-0.294l1.276-2.945l-0.491-2.65
+		l-3.239-0.393l-3.141,1.374L242.532,544.954L242.532,544.954z M266.092,552.611l2.847,4.221l1.865-0.294l0.883-0.393l1.08,0.982
+		l2.847-0.098l0.785-1.08l-2.258-1.374l-1.472-2.847l-1.669-2.749l-4.516,2.258L266.092,552.611L266.092,552.611z M281.602,559.483
+		l0.982-1.472l3.632,0.785l0.491-0.393l4.712,0.491l-0.294,0.982l-1.963,1.08l-3.338-0.294L281.602,559.483z M285.626,563.409
+		l1.472,2.945l2.356-0.883l0.294-1.276l-1.276-1.669l-2.847-0.294v1.177H285.626z M290.928,562.624l1.767-2.258l3.632,1.865
+		l3.338,0.883l3.338,2.16v1.472l-2.749,1.374l-3.73,0.785l-1.865-1.08L290.928,562.624L290.928,562.624z M303.786,574.502
+		l1.276-0.982l2.65,1.276l5.89,2.749l2.65,1.669l1.276,1.865l1.473,3.338l3.141,1.963l-0.294,0.982l-2.945,2.454l-3.239,1.08
+		l-1.08-0.491l-2.356,1.374l-1.865,2.454l-1.767,2.258l-1.374-0.098l-2.749-1.963l-0.294-3.534l0.491-1.865l-1.276-4.319
+		l-1.669-1.374l-0.098-1.963l1.767-0.785l1.669-2.356l0.393-0.785l-1.276-1.374L303.786,574.502L303.786,574.502z"
+												stroke-width="0.7"></path>
+	<path id="path179" fill="#1e8346" stroke="#b6b6bf" stroke-miterlimit="10"
+												d="M156.442,495.381l-0.294,65.574l1.276,0.785
+		l2.356,0.098l1.08-0.883h1.963l0.098,2.258l5.399,5.203l0.393,1.963l2.65-1.472l0.491-0.098l0.294-2.356l1.08-1.276l0.883-0.098
+		l1.472-1.08l2.356,1.669l0.491,2.258l1.472,0.884l0.883,1.865l2.945,1.374l2.65,4.614l2.16,2.945l1.767,2.16l1.08,2.847
+		l3.828,1.374l4.025,1.669l0.785,3.338l0.393,2.356l-0.785,2.65l-1.374,1.767l-1.276-0.589l-1.08-2.356l-2.16-1.08l-1.374-0.883
+		l-0.589,0.589l1.08,2.16l0.098,2.847l-0.883,0.393l-1.472-1.472l-1.669-0.982l0.393,1.276l0.982,1.374l-0.589,0.589
+		c0,0-0.589-0.294-0.982-0.785c-0.393-0.491-1.669-2.65-1.669-2.65l-0.785-1.767c0,0-0.295,0.982-0.785,0.785
+		c-0.491-0.294-0.982-1.08-0.982-1.08l1.374-1.472l-1.08-1.08v-3.828h-0.589l-0.589,2.65l-0.883,0.393l-0.785-2.847l-0.491-2.847
+		l-0.589-0.393l0.294,4.319v0.884l-1.08-0.982l-2.749-4.614l-1.669-0.393l-0.491-2.847l-1.276-2.258l-1.276-0.883v-1.767
+		l1.669-0.982l-0.393-0.294l-1.963,0.491l-2.65-1.865l-1.963-2.258l-3.73-1.963l-3.141-1.963l0.982-2.454v-1.276l-1.374,1.276
+		l-2.258,0.884l-2.847-0.884l-4.319-1.865h-4.221l-0.491,0.393l-5.006-2.945l-1.669-0.294l-2.16-4.516l-2.749,0.294l-2.749,1.08
+		l0.393,3.534l0.883-2.258l0.785,0.294l-1.08,3.338l2.454-2.16l0.491,1.276l-2.945,3.338l-0.982-0.294l-0.393-1.472l-0.982-0.589
+		l-0.982,0.883l-2.16-1.374l-2.356,1.669l-1.374,1.669l-2.65,1.571l-3.632-0.098l-0.393-1.669l2.847-0.491v-0.982l-1.767-0.491
+		l0.785-1.865l1.767-2.945v-1.374l0.098-0.589l3.338-1.767l0.785,0.982h2.16l-0.982-1.963l-2.847-0.294l-3.828,2.16l-1.865,2.65
+		l-1.374,1.963l-0.883,1.767l-3.239,1.08l-2.356,1.963l-0.295,1.276l1.767,0.785l0.589,1.669l-2.16,2.454l-5.006,3.239l-5.988,3.239
+		l-1.669,0.884l-4.123,0.883l-4.123,1.767l1.374,0.982l-1.08,1.08l-0.393,0.883l-2.16-0.785l-2.454,0.098l-0.589,1.767h-0.785
+		l0.295-1.865l-2.749,0.982l-2.258,0.785l-2.65-0.982l-2.258,1.472h-2.061l-1.669,0.982l-1.276,0.589l-1.669-0.294l-1.963-0.883
+		l-1.767,0.491l-0.785,0.785l-1.276-0.884v-1.57l2.356-0.982l4.908,0.491l3.338-1.276l1.669-1.669l2.258-0.491l1.374-0.589
+		l2.16,0.098l1.276,0.982l0.785-0.294l1.767-2.16l2.356-0.785l2.65-0.491l0.982-0.294l0.491,0.393H89.1l0.982-2.847l3.141-1.08
+		l1.472-2.847l1.767-3.534l1.276-1.08l0.295-1.963l-1.276,0.982l-2.65,0.491l-0.491-1.865l-0.982-0.294l-0.785,0.785l-0.098,2.258
+		l-1.08-0.098l-1.08-4.516l-0.982,0.982l-0.883-0.393l-0.295-1.472l-3.141,0.098l-1.669,0.883l-1.963-0.294l1.08-1.08l0.393-1.963
+		l-0.491-1.472l1.08-0.785l0.982-0.098l-0.491-1.374v-3.338l-0.785-0.785l-0.589,1.08h-4.712l-1.08-0.982l-0.491-2.945l-1.669-2.749
+		v-0.785l1.669-0.589l0.098-1.669l0.883-0.883l-0.589-0.393l-0.982,0.393l-0.883-2.16l0.785-3.828l3.534-2.454l1.963-1.276
+		l1.472-2.847l2.16-0.982l1.963,0.883l0.294,1.963l1.865-0.294l2.454-1.865l1.276,0.491l0.785,0.491h1.276l1.767-0.982l0.589-3.338
+		c0,0,0.294-2.258,0.785-2.65c0.491-0.393,0.785-0.785,0.785-0.785l-0.883-1.472l-1.963,0.589l-2.454,0.589l-1.472-0.393
+		l-2.749-1.374l-3.828-0.098l-2.747-2.855l0.393-2.945l0.491-1.865l-1.669-1.374l-1.472-2.847l0.393-0.589l5.203-0.393h1.669
+		l0.785,0.785h0.491l-0.098-1.276l2.945-0.491l1.963,0.294l1.08,0.883l-1.08,1.669l-0.393,1.08l2.16,1.276l3.828,1.374l1.374-0.785
+		l-1.767-3.436l-0.785-2.454l0.785-0.589l-2.65-1.472l-0.393-0.883l0.393-1.276l-0.589-2.945l-2.258-3.632l-1.865-3.239l2.258-1.472
+		h2.454l1.374,0.491l3.239-0.098l2.847-2.749l0.883-2.356l2.847-1.865l1.276,0.785l2.16-0.491l2.847-1.669l0.883-0.098l0.785,0.589
+		l3.534-0.098l2.16-2.356h0.883l2.749,1.865l1.472,1.669l-0.393,0.884l0.491,0.883l1.276-1.276l2.945,0.294l0.294,2.847l1.472,1.08
+		l5.497,0.491l4.908,3.239l1.08-0.785l4.025,1.963l1.669-0.491l1.472-0.589l3.73,1.472L156.442,495.381L156.442,495.381z
+		 M68.093,517.566l1.669,4.123l-0.098,0.785l-2.258-0.294l-1.374-3.141l-1.374-1.08h-1.865l-0.098-1.963l1.374-1.865l0.883,1.865
+		l1.08,1.08L68.093,517.566L68.093,517.566z M66.13,543.285l2.847,0.589l2.847,0.785l0.589,0.785l-1.276,2.847l-2.356-0.098
+		l-2.65-2.749L66.13,543.285L66.13,543.285z M50.227,532.487l0.883,1.963l0.883,1.276l-0.883,0.589l-1.669-2.356v-1.472H50.227
+		L50.227,532.487z M39.723,588.638l2.65-1.767l2.65-0.785l1.963,0.294l0.393,1.276l1.472,0.393l1.472-1.472l-0.294-1.276l2.16-0.491
+		l2.258,1.963l-0.883,1.374l-3.338,0.883l-2.16-0.393l-2.847-0.884l-3.338,1.08l-1.276,0.294L39.723,588.638z M77.222,585.104
+		l1.276,1.472l1.669-1.276l-1.08-0.982L77.222,585.104z M79.48,587.46l0.883-1.767l1.669,0.294l-0.589,1.472H79.48V587.46z
+		 M97.641,585.987l1.08,1.374l0.785-0.883l-0.589-1.472L97.641,585.987z M104.316,576.367l0.883,4.516l2.258,0.589l3.828-2.258
+		l3.338-1.963l-1.276-1.865l0.393-1.865l-1.669,0.982l-2.258-0.589l1.276-0.883l1.472,0.589l2.945-1.374l0.393-1.08l-1.865-0.589
+		l0.589-1.472l-2.16,1.472l-3.632,2.749l-3.73,2.258L104.316,576.367z M136.809,561.151l1.865-1.08l-0.785-1.374l-1.374,0.785
+		L136.809,561.151z"
+												stroke-width="0.7"></path>
+	<path id="path4" fill="#1e8346" stroke="#b6b6bf" stroke-miterlimit="10"
+												d="M96.659,22.618l4.123,1.374l9.129,2.65l8.05,1.865
+		l18.75,5.399l21.498,5.399l15.019,3.534l-0.982,3.73l-3.534,12.761l-4.221,19.829l-3.436,15.608l-0.196,9.326l-13.056-3.239
+		l-14.038-3.436l-14.43,0.098l-0.393-1.276l-5.203,1.963l-4.221-0.589l-2.258-1.571l-1.178,0.687l-4.417-0.196l-1.571-1.276
+		l-4.908-1.963l-0.785,0.098l-4.123-1.374l-1.865,1.767l-5.792-0.294l-5.595-3.927l0.687-0.785l0.196-7.461l-2.16-3.73L71.921,77
+		l-0.589-2.454l-2.258-0.491l-1.767-1.472l-1.669,0.883l-2.16-2.749l0.294-2.749l2.552-0.295l1.472-3.828l-2.454-1.08l0.196-3.534
+		l4.123-0.589l-2.552-2.65l-1.374-6.773l0.589-2.749v-7.362l-1.669-3.141l2.16-8.933l1.963,0.491l2.258,2.749l2.552,2.454
+		l3.043,1.865l4.221,1.963l2.847,0.589l2.749,1.374l3.141,0.883l2.16-0.196V36.85l1.178-1.08l1.963-1.276l0.295,1.08l0.294,1.669
+		l-2.16,0.491l-0.294,1.963l1.669,1.374l1.08,2.356l0.589,1.865l1.374-0.196l0.196-1.276l-0.883-1.276l-0.491-3.141l0.785-1.669
+		l-0.589-1.374V34.2l1.669-3.436l-1.08-2.454l-2.258-4.417l0.295-0.785L96.659,22.618z M87.726,28.41l1.865-0.196l0.491,1.276
+		l1.472-1.571h2.16l0.785,1.472l-1.472,1.669l0.589,0.785l-0.687,1.963l-1.276,0.393c0,0-0.883,0.098-0.883-0.196
+		s1.374-2.454,1.374-2.454l-1.571-0.491l-0.295,1.374l-0.687,0.589l-1.472-2.16L87.726,28.41z"
+												stroke-width="0.7"></path>
+	<path id="path77" fill="#1e8346" stroke="#b6b6bf" stroke-miterlimit="10"
+												d="M715.982,440.114l1.963,7.853l3.534,9.326
+		l5.006,8.933l3.534,5.988l4.516,5.301l3.828,3.534l1.472,2.749l-1.08,1.276l-0.785,1.276l2.749,7.068l2.749,2.749l2.454,5.105
+		l3.338,5.595l4.221,7.853l1.178,7.264l0.491,11.387l0.589,1.669l-0.294,3.239l-2.258,1.276l0.294,1.865l-0.589,1.865l0.294,2.356
+		l0.491,1.865l-2.552,3.141l-2.847,1.374l-3.632,0.196l-1.374,1.571l-2.258,0.884l-1.178-0.491l-1.08-0.883l-0.294-2.749
+		l-0.785-3.239l-3.239-4.908l-3.338-2.16l-3.632-0.294l-0.785,1.276l-2.847-4.221l-0.589-3.436l-2.454-3.828l-1.669-1.08
+		l-1.472,2.061l-1.669-0.294l-1.963-4.81l-2.749-3.73l-2.749-5.105l-2.454-2.945l-3.338-3.534l1.963-2.356l3.043-5.301l-0.196-1.571
+		l-4.221-0.884l-1.473,0.589l0.294,0.589l2.454,0.883l-1.374,4.319l-0.785,0.491l-1.669-3.828l-1.178-4.614l-0.294-2.65l1.374-4.516
+		v-9.129l-2.847-3.534l-1.178-2.945l-4.908-1.276l-1.865-0.589l-1.472-2.454l-3.239-1.571l-1.08-3.239l-2.552-0.883l-2.258-3.534
+		l-3.927-1.374l-2.749-1.374h-2.258l-3.828,0.785l-0.196,1.865l0.785,0.982l-0.491,1.08l-2.847-0.196l-3.534,3.436l-3.338,1.865
+		h-3.632l-3.043,1.276l-0.294-2.651l-1.472-1.865l-2.749-1.08l-1.472-1.374l-7.559-3.73l-7.166-1.669l-4.123,0.589l-5.595,0.491
+		l-5.595,1.963l-3.239,0.589l-0.196-7.657l-2.454-1.865l-1.669-1.669l0.294-2.945l9.62-1.276l23.952-2.749l6.381-0.589l5.792-0.196
+		l2.454,3.73l1.374,1.374l7.461,0.196l10.209-0.589l20.124-1.276l5.105-0.687h4.319l0.196,2.749l2.454,0.785l0.294-4.221
+		l-1.472-4.319l1.08-1.571l5.497,0.785L715.982,440.114L715.982,440.114z M727.468,567.139l2.258-0.589l1.178-0.196l1.374-2.258
+		l2.16-1.571l1.178,0.491l1.571,0.294l0.393,0.982l-3.239,1.178l-3.927,1.374l-2.16,1.178L727.468,567.139z M740.131,562.329
+		l1.178,0.982l2.552-2.061l5.006-4.025l3.534-3.73l2.356-6.381l0.883-1.669l0.196-3.239l-0.687,0.491l-0.884,2.749l-1.374,4.417
+		l-3.043,5.006l-4.123,4.025l-3.141,1.865L740.131,562.329L740.131,562.329z"
+												stroke-width="0.7"></path>
+</g>
+<g id="CITY_ALBANY" class="q" data-qText="Albany" data-qImg="null" data-wikipediaLink="" onclick="checkQuestion(this, evt)">
+	
+		<rect id="rect12_42_" x="740.292" y="141.663" opacity="0" fill="#FFFFFF" stroke="#010202" stroke-miterlimit="10" enable-background="new    " width="73.17"
+												height="17.149" visibility="hidden"></rect>
+	<circle id="CITY_42_" opacity="1" fill="#FFFFFF" enable-background="new    " cx="784.543" cy="166.807" r="7" stroke="#000000" stroke-width="0.5px" class="city"></circle>
+	
+		<circle id="Circle_42_" fill="#1e8346" stroke="#b6b6bf" stroke-width="0.5" stroke-miterlimit="10" cx="775.082" cy="158.371" r="29.196" opacity="0.001"></circle>
+<circle cx="784.543" cy="166.807" r="13" fill="#1e8346" opacity="0.001" class="city2" stroke="#b6b6bf" stroke-width="0.5"></circle></g>
+<g id="CITY_MONTPELIER" class="q" data-qText="Montpelier" data-qImg="null" data-wikipediaLink="" hint-index="4" data-errors="4"
+												onclick="checkQuestion(this, evt)">
+	
+		<rect id="rect12_30_" x="717.781" y="116.439" opacity="0" fill="#FFFFFF" stroke="#010202" stroke-miterlimit="10" enable-background="new    " width="73.17"
+												height="17.149" visibility="hidden"></rect>
+	<circle id="CITY_30_" opacity="1" fill="#FFFFFF" enable-background="new    " cx="799.97" cy="127.052" r="7" stroke="#000000" stroke-width="0.5px" class="city"></circle>
+	
+		<circle id="Circle_30_" fill="#1e8346" stroke="#b6b6bf" stroke-width="0.5" stroke-miterlimit="10" cx="786.892" cy="110.999" r="28.813" opacity="0.001"></circle>
+<circle cx="799.97" cy="127.052" r="13" fill="#1e8346" opacity="0.001" class="city2" stroke="#b6b6bf" stroke-width="0.5"></circle></g>
+<g id="CITY_ATLANTA" class="q" data-qText="Atlanta" data-qImg="null" data-wikipediaLink="" onclick="checkQuestion(this, evt)">
+	
+		<rect id="rect12_1_" x="622.744" y="393.048" opacity="0" fill="#FFFFFF" stroke="#010202" stroke-miterlimit="10" enable-background="new    " width="73.17"
+												height="17.149" visibility="hidden"></rect>
+	<circle id="CITY_1_" opacity="1" fill="#FFFFFF" enable-background="new    " cx="659.329" cy="384.533" r="7" stroke="#000000" stroke-width="0.5px" class="city"></circle>
+	
+		<circle id="Circle_1_" fill="#1e8346" stroke="#b6b6bf" stroke-width="0.5" stroke-miterlimit="10" cx="659.006" cy="385.235" r="28.058" opacity="0.001"></circle>
+<circle cx="659.329" cy="384.533" r="13" fill="#1e8346" opacity="0.001" class="city2" stroke="#b6b6bf" stroke-width="0.5"></circle></g>
+<g id="CITY_TALLAHASSEE" class="q" data-qText="Tallahassee" data-qImg="null" data-wikipediaLink="" onclick="checkQuestion(this, evt)">
+	
+		<rect id="rect12_46_" x="628.576" y="459.4" opacity="0" fill="#FFFFFF" stroke="#010202" stroke-miterlimit="10" enable-background="new    " width="73.17"
+												height="17.149" visibility="hidden"></rect>
+	<circle id="CITY_46_" opacity="1" fill="#FFFFFF" enable-background="new    " cx="665.161" cy="450.885" r="7" stroke="#000000" stroke-width="0.5px" class="city"></circle>
+	
+		<circle id="Circle_46_" fill="#1e8346" stroke="#b6b6bf" stroke-width="0.5" stroke-miterlimit="10" cx="684.944" cy="471.694" r="48.165" opacity="0.001"></circle>
+	
+		<circle id="Circle_53_" fill="#1e8346" stroke="#b6b6bf" stroke-width="0.5" stroke-miterlimit="10" cx="741.652" cy="534.832" r="48.165" opacity="0.001"></circle>
+<circle cx="665.161" cy="450.885" r="13" fill="#1e8346" opacity="0.001" class="city2" stroke="#b6b6bf" stroke-width="0.5"></circle></g>
+<g id="CITY_NASHVILLE" class="q" data-qText="Nashville" data-qImg="null" data-wikipediaLink="" hint-index="2" data-errors="2" onclick="checkQuestion(this, evt)">
+	
+		<rect id="rect12_31_" x="570.042" y="349.011" opacity="0" fill="#FFFFFF" stroke="#010202" stroke-miterlimit="10" enable-background="new    " width="73.17"
+												height="17.149" visibility="hidden"></rect>
+	<circle id="CITY_31_" opacity="1" fill="#FFFFFF" enable-background="new    " cx="606.628" cy="340.496" r="7" stroke="#000000" stroke-width="0.5px" class="city"></circle>
+	
+		<circle id="Circle_31_" fill="#1e8346" stroke="#b6b6bf" stroke-width="0.5" stroke-miterlimit="10" cx="606.305" cy="341.198" r="28.058" opacity="0.001"></circle>
+<circle cx="606.628" cy="340.496" r="13" fill="#1e8346" opacity="0.001" class="city2" stroke="#b6b6bf" stroke-width="0.5"></circle></g>
+<g id="CITY_ANNAPOLIS" class="q" data-qText="Annapolis" data-qImg="null" data-wikipediaLink="" onclick="checkQuestion(this, evt)">
+	
+		<rect id="rect12_50_" x="686.671" y="231.651" opacity="0" fill="#FFFFFF" stroke="#010202" stroke-miterlimit="10" enable-background="new    " width="73.17"
+												height="17.149" visibility="hidden"></rect>
+	<circle id="CITY_50_" opacity="1" fill="#FFFFFF" enable-background="new    " cx="765.043" cy="248.114" r="7" stroke="#000000" stroke-width="0.5px" class="city"></circle>
+	
+		<circle id="Circle_50_" fill="#1e8346" stroke="#b6b6bf" stroke-width="0.5" stroke-miterlimit="10" cx="764.871" cy="244.122" r="11.596" opacity="0.001"></circle>
+<circle cx="765.043" cy="248.114" r="13" fill="#1e8346" opacity="0.001" class="city2" stroke="#b6b6bf" stroke-width="0.5"></circle></g>
+<g id="CITY_HARRISBURG" class="q" data-qText="Harrisburg" data-qImg="null" data-wikipediaLink="" onclick="checkQuestion(this, evt)">
+	
+		<rect id="rect12_19_" x="717.135" y="194.999" opacity="0" fill="#FFFFFF" stroke="#010202" stroke-miterlimit="10" enable-background="new    " width="73.17"
+												height="17.149" visibility="hidden"></rect>
+	<circle id="CITY_19_" opacity="1" fill="#FFFFFF" enable-background="new    " cx="755.72" cy="220.085" r="7" stroke="#000000" stroke-width="0.5px" class="city"></circle>
+	
+		<circle id="Circle_19_" fill="#1e8346" stroke="#b6b6bf" stroke-width="0.5" stroke-miterlimit="10" cx="746.637" cy="209.026" r="29.507" opacity="0.001"></circle>
+<circle cx="755.72" cy="220.085" r="13" fill="#1e8346" opacity="0.001" class="city2" stroke="#b6b6bf" stroke-width="0.5"></circle></g>
+<g id="CITY_DOVER" class="q" data-qText="Dover" data-qImg="null" data-wikipediaLink="" onclick="checkQuestion(this, evt)">
+	<line fill="#1e8346" stroke="#010202" stroke-miterlimit="10" x1="784.543" y1="246.109" x2="821.741" y2="246.109" opacity="0"></line>
+	
+		<rect id="rect12_17_" x="793.768" y="238.269" opacity="0" fill="#FFFFFF" stroke="#010202" stroke-miterlimit="10" enable-background="new    " width="55.947"
+												height="17.149" visibility="hidden"></rect>
+	<circle id="CITY_17_" opacity="1" fill="#FFFFFF" enable-background="new    " cx="784.038" cy="246.446" r="7" stroke="#000000" stroke-width="0.5px" class="city"></circle>
+	
+		<circle id="Circle_17_" fill="#1e8346" stroke="#b6b6bf" stroke-width="0.5" stroke-miterlimit="10" cx="789.902" cy="249.649" r="14.782" opacity="0.001"></circle>
+<circle cx="784.038" cy="246.446" r="13" fill="#1e8346" opacity="0.001" class="city2" stroke="#b6b6bf" stroke-width="0.5"></circle></g>
+<g id="CITY_TRENTON" class="q" data-qText="Trenton" data-qImg="null" data-wikipediaLink="" onclick="checkQuestion(this, evt)">
+	<line fill="#1e8346" stroke="#010202" stroke-miterlimit="10" x1="792.142" y1="221.943" x2="829.34" y2="221.943" opacity="0"></line>
+	
+		<rect id="rect12_48_" x="797.646" y="213.766" opacity="0" fill="#FFFFFF" stroke="#010202" stroke-miterlimit="10" enable-background="new    " width="63.218"
+												height="17.149" visibility="hidden"></rect>
+	<circle id="CITY_48_" opacity="1" fill="#FFFFFF" enable-background="new    " cx="791.024" cy="221.943" r="7" stroke="#000000" stroke-width="0.5px" class="city"></circle>
+	
+		<circle id="Circle_48_" fill="#1e8346" stroke="#b6b6bf" stroke-width="0.5" stroke-miterlimit="10" cx="795.872" cy="220.645" r="18.595" opacity="0.001"></circle>
+<circle cx="791.024" cy="221.943" r="13" fill="#1e8346" opacity="0.001" class="city2" stroke="#b6b6bf" stroke-width="0.5"></circle></g>
+<g id="CITY_AUGUSTA" class="q" data-qText="Augusta" data-qImg="null" data-wikipediaLink="" onclick="checkQuestion(this, evt)">
+	
+		<rect id="rect12_2_" x="801.628" y="99.021" opacity="0" fill="#FFFFFF" stroke="#010202" stroke-miterlimit="10" enable-background="new    " width="73.17"
+												height="17.149" visibility="hidden"></rect>
+	<circle id="CITY_2_" opacity="1" fill="#FFFFFF" enable-background="new    " cx="838.213" cy="124.86" r="7" stroke="#000000" stroke-width="0.5px" class="city"></circle>
+	
+		<circle id="Circle_2_" fill="#1e8346" stroke="#b6b6bf" stroke-width="0.5" stroke-miterlimit="10" cx="855.072" cy="107.381" r="33.138" opacity="0.001"></circle>
+<circle cx="838.213" cy="124.86" r="13" fill="#1e8346" opacity="0.001" class="city2" stroke="#b6b6bf" stroke-width="0.5"></circle></g>
+<g id="CITY_AUSTIN" class="q" data-qText="Austin" data-qImg="null" data-wikipediaLink="" onclick="checkQuestion(this, evt)">
+	
+		<rect id="rect12_4_" x="408.492" y="480.78" opacity="0" fill="#FFFFFF" stroke="#010202" stroke-miterlimit="10" enable-background="new    " width="73.17"
+												height="17.149" visibility="hidden"></rect>
+	<circle id="CITY_4_" opacity="1" fill="#FFFFFF" enable-background="new    " cx="445.077" cy="472.266" r="7" stroke="#000000" stroke-width="0.5px" class="city"></circle>
+	
+		<circle id="Circle_4_" fill="#1e8346" stroke="#b6b6bf" stroke-width="0.5" stroke-miterlimit="10" cx="444.754" cy="472.968" r="61.864" opacity="0.001"></circle>
+	
+		<circle id="Circle_52_" fill="#1e8346" stroke="#b6b6bf" stroke-width="0.5" stroke-miterlimit="10" cx="379.915" cy="430.787" r="45.304" opacity="0.001"></circle>
+<circle cx="445.077" cy="472.266" r="13" fill="#1e8346" opacity="0.001" class="city2" stroke="#b6b6bf" stroke-width="0.5"></circle></g>
+<g id="CITY_BATONROUGE" class="q" data-qText="Bâton-Rouge" data-qImg="null" data-wikipediaLink="" data-errors="3" onclick="checkQuestion(this, evt)">
+	
+		<rect id="rect12_5_" x="511.337" y="472.172" opacity="0" fill="#FFFFFF" stroke="#010202" stroke-miterlimit="10" enable-background="new    " width="73.17"
+												height="17.149" visibility="hidden"></rect>
+	<circle id="CITY_5_" opacity="1" fill="#FFFFFF" enable-background="new    " cx="547.923" cy="463.657" r="7" stroke="#000000" stroke-width="0.5px" class="city"></circle>
+	
+		<circle id="Circle_5_" fill="#1e8346" stroke="#b6b6bf" stroke-width="0.5" stroke-miterlimit="10" cx="547.6" cy="464.359" r="28.058" opacity="0.001"></circle>
+<circle cx="547.923" cy="463.657" r="13" fill="#1e8346" opacity="0.001" class="city2" stroke="#b6b6bf" stroke-width="0.5"></circle></g>
+<g id="CITY_JACKSON" class="q" data-qText="Jackson" data-qImg="null" data-wikipediaLink="" onclick="checkQuestion(this, evt)">
+	
+		<rect id="rect12_23_" x="524.886" y="428.919" opacity="0" fill="#FFFFFF" stroke="#010202" stroke-miterlimit="10" enable-background="new    " width="73.17"
+												height="17.149" visibility="hidden"></rect>
+	<circle id="CITY_23_" opacity="1" fill="#FFFFFF" enable-background="new    " cx="561.472" cy="420.404" r="7" stroke="#000000" stroke-width="0.5px" class="city"></circle>
+	
+		<circle id="Circle_23_" fill="#1e8346" stroke="#b6b6bf" stroke-width="0.5" stroke-miterlimit="10" cx="561.149" cy="421.106" r="28.058" opacity="0.001"></circle>
+<circle cx="561.472" cy="420.404" r="13" fill="#1e8346" opacity="0.001" class="city2" stroke="#b6b6bf" stroke-width="0.5"></circle></g>
+<g id="CITY_MONTGOMERY" class="q" data-qText="Montgomery" data-qImg="null" data-wikipediaLink="" hint-index="2" data-errors="2"
+												onclick="checkQuestion(this, evt)">
+	
+		<rect id="rect12_29_" x="586.576" y="417.299" opacity="0" fill="#FFFFFF" stroke="#010202" stroke-miterlimit="10" enable-background="new    " width="73.17"
+												height="17.149" visibility="hidden"></rect>
+	<circle id="CITY_29_" opacity="1" fill="#FFFFFF" enable-background="new    " cx="623.161" cy="408.784" r="7" stroke="#000000" stroke-width="0.5px" class="city"></circle>
+	
+		<circle id="Circle_29_" fill="#1e8346" stroke="#b6b6bf" stroke-width="0.5" stroke-miterlimit="10" cx="622.838" cy="409.486" r="28.058" opacity="0.001"></circle>
+<circle cx="623.161" cy="408.784" r="13" fill="#1e8346" opacity="0.001" class="city2" stroke="#b6b6bf" stroke-width="0.5"></circle></g>
+<g id="CITY_BISMARCK" class="q" data-qText="Bismarck" data-qImg="null" data-wikipediaLink="" hint-index="2" data-errors="5" onclick="checkQuestion(this, evt)">
+	
+		<rect id="rect12_6_" x="356.188" y="121.751" opacity="0" fill="#FFFFFF" stroke="#010202" stroke-miterlimit="10" enable-background="new    " width="73.17"
+												height="17.149" visibility="hidden"></rect>
+	<circle id="CITY_6_" opacity="1" fill="#FFFFFF" enable-background="new    " cx="392.773" cy="113.236" r="7" stroke="#000000" stroke-width="0.5px" class="city"></circle>
+	
+		<circle id="Circle_6_" fill="#1e8346" stroke="#b6b6bf" stroke-width="0.5" stroke-miterlimit="10" cx="382.736" cy="98.224" r="47.205" opacity="0.001"></circle>
+<circle cx="392.773" cy="113.236" r="13" fill="#1e8346" opacity="0.001" class="city2" stroke="#b6b6bf" stroke-width="0.5"></circle></g>
+<g id="CITY_PIERRE" class="q" data-qText="Pierre" data-qImg="null" data-wikipediaLink="" onclick="checkQuestion(this, evt)">
+	
+		<rect id="rect12_35_" x="363.048" y="174.01" opacity="0" fill="#FFFFFF" stroke="#010202" stroke-miterlimit="10" enable-background="new    " width="73.17"
+												height="17.149" visibility="hidden"></rect>
+	<circle id="CITY_35_" opacity="1" fill="#FFFFFF" enable-background="new    " cx="399.633" cy="165.494" r="7" stroke="#000000" stroke-width="0.5px" class="city"></circle>
+	
+		<circle id="Circle_35_" fill="#1e8346" stroke="#b6b6bf" stroke-width="0.5" stroke-miterlimit="10" cx="392.613" cy="172.892" r="34.754" opacity="0.001"></circle>
+<circle cx="399.633" cy="165.494" r="13" fill="#1e8346" opacity="0.001" class="city2" stroke="#b6b6bf" stroke-width="0.5"></circle></g>
+<g id="CITY_DESMOINES" class="q" data-qText="Des Moines" data-qImg="null" data-wikipediaLink="" onclick="checkQuestion(this, evt)">
+	
+		<rect id="rect12_16_" x="468.01" y="238.269" opacity="0" fill="#FFFFFF" stroke="#010202" stroke-miterlimit="10" enable-background="new    " width="73.17"
+												height="17.149" visibility="hidden"></rect>
+	<circle id="CITY_16_" opacity="1" fill="#FFFFFF" enable-background="new    " cx="498.596" cy="229.754" r="7" stroke="#000000" stroke-width="0.5px" class="city"></circle>
+	
+		<circle id="Circle_16_" fill="#1e8346" stroke="#b6b6bf" stroke-width="0.5" stroke-miterlimit="10" cx="498.273" cy="230.456" r="28.058" opacity="0.001"></circle>
+<circle cx="498.596" cy="229.754" r="13" fill="#1e8346" opacity="0.001" class="city2" stroke="#b6b6bf" stroke-width="0.5"></circle></g>
+<g id="CITY_LINCOLN" class="q" data-qText="Lincoln" data-qImg="null" data-wikipediaLink="" hint-index="2" data-errors="2" onclick="checkQuestion(this, evt)">
+	
+		<rect id="rect12_26_" x="395.418" y="244.784" opacity="0" fill="#FFFFFF" stroke="#010202" stroke-miterlimit="10" enable-background="new    " width="73.17"
+												height="17.149" visibility="hidden"></rect>
+	<circle id="CITY_26_" opacity="1" fill="#FFFFFF" enable-background="new    " cx="442.003" cy="236.269" r="7" stroke="#000000" stroke-width="0.5px" class="city"></circle>
+	
+		<circle id="Circle_26_" fill="#1e8346" stroke="#b6b6bf" stroke-width="0.5" stroke-miterlimit="10" cx="441.68" cy="236.971" r="28.058" opacity="0.001"></circle>
+	
+		<circle id="Circle_57_" fill="#1e8346" stroke="#b6b6bf" stroke-width="0.5" stroke-miterlimit="10" cx="382.736" cy="226.945" r="28.058" opacity="0.001"></circle>
+<circle cx="442.003" cy="236.269" r="13" fill="#1e8346" opacity="0.001" class="city2" stroke="#b6b6bf" stroke-width="0.5"></circle></g>
+<g id="CITY_JEFFERSONCITY" class="q" data-qText="Jefferson City" data-qImg="null" data-wikipediaLink="" onclick="checkQuestion(this, evt)">
+	
+		<rect id="rect12_24_" x="481.005" y="297.733" opacity="0" fill="#FFFFFF" stroke="#010202" stroke-miterlimit="10" enable-background="new    " width="73.17"
+												height="17.149" visibility="hidden"></rect>
+	<circle id="CITY_24_" opacity="1" fill="#FFFFFF" enable-background="new    " cx="517.59" cy="289.218" r="7" stroke="#000000" stroke-width="0.5px" class="city"></circle>
+	
+		<circle id="Circle_24_" fill="#1e8346" stroke="#b6b6bf" stroke-width="0.5" stroke-miterlimit="10" cx="517.267" cy="289.92" r="28.058" opacity="0.001"></circle>
+<circle cx="517.59" cy="289.218" r="13" fill="#1e8346" opacity="0.001" class="city2" stroke="#b6b6bf" stroke-width="0.5"></circle></g>
+<g id="CITY_TOPEKA" class="q" data-qText="Topeka" data-qImg="null" data-wikipediaLink="" onclick="checkQuestion(this, evt)">
+	
+		<rect id="rect12_47_" x="423.622" y="286.687" opacity="0" fill="#FFFFFF" stroke="#010202" stroke-miterlimit="10" enable-background="new    " width="73.17"
+												height="17.149" visibility="hidden"></rect>
+	<circle id="CITY_47_" opacity="1" fill="#FFFFFF" enable-background="new    " cx="460.207" cy="278.172" r="7" stroke="#000000" stroke-width="0.5px" class="city"></circle>
+	
+		<circle id="Circle_47_" fill="#1e8346" stroke="#b6b6bf" stroke-width="0.5" stroke-miterlimit="10" cx="459.884" cy="283.874" r="28.058" opacity="0.001"></circle>
+	
+		<circle id="Circle_58_" fill="#1e8346" stroke="#b6b6bf" stroke-width="0.5" stroke-miterlimit="10" cx="399.633" cy="292.165" r="28.058" opacity="0.001"></circle>
+<circle cx="460.207" cy="278.172" r="13" fill="#1e8346" opacity="0.001" class="city2" stroke="#b6b6bf" stroke-width="0.5"></circle></g>
+<g id="CITY_SPRINGFIELD" class="q" data-qText="Springfield" data-qImg="null" data-wikipediaLink="" onclick="checkQuestion(this, evt)">
+	
+		<rect id="rect12_45_" x="529.563" y="276.017" opacity="0" fill="#FFFFFF" stroke="#010202" stroke-miterlimit="10" enable-background="new    " width="73.17"
+												height="17.149" visibility="hidden"></rect>
+	<circle id="CITY_45_" opacity="1" fill="#FFFFFF" enable-background="new    " cx="561.149" cy="267.502" r="7" stroke="#000000" stroke-width="0.5px" class="city"></circle>
+	
+		<circle id="Circle_45_" fill="#1e8346" stroke="#b6b6bf" stroke-width="0.5" stroke-miterlimit="10" cx="560.826" cy="268.203" r="28.058" opacity="0.001"></circle>
+<circle cx="561.149" cy="267.502" r="13" fill="#1e8346" opacity="0.001" class="city2" stroke="#b6b6bf" stroke-width="0.5"></circle></g>
+<g id="CITY_LITTLEROCK" class="q" data-qText="Little Rock" data-qImg="null" data-wikipediaLink="" onclick="checkQuestion(this, evt)">
+	
+		<rect id="rect12_27_" x="482.957" y="377.069" opacity="0" fill="#FFFFFF" stroke="#010202" stroke-miterlimit="10" enable-background="new    " width="73.17"
+												height="17.149" visibility="hidden"></rect>
+	<circle id="CITY_27_" opacity="1" fill="#FFFFFF" enable-background="new    " cx="519.542" cy="368.554" r="7" stroke="#000000" stroke-width="0.5px" class="city"></circle>
+	
+		<circle id="Circle_27_" fill="#1e8346" stroke="#b6b6bf" stroke-width="0.5" stroke-miterlimit="10" cx="519.219" cy="369.256" r="36.602" opacity="0.001"></circle>
+<circle cx="519.542" cy="368.554" r="13" fill="#1e8346" opacity="0.001" class="city2" stroke="#b6b6bf" stroke-width="0.5"></circle></g>
+<g id="CITY_OKLAHOMACITY" class="q" data-qText="Oklahoma City" data-qImg="null" data-wikipediaLink="" onclick="checkQuestion(this, evt)">
+	
+		<rect id="rect12_32_" x="395.418" y="362.616" opacity="0" fill="#FFFFFF" stroke="#010202" stroke-miterlimit="10" enable-background="new    " width="73.17"
+												height="17.149" visibility="hidden"></rect>
+	<circle id="CITY_32_" opacity="1" fill="#FFFFFF" enable-background="new    " cx="432.003" cy="354.101" r="7" stroke="#000000" stroke-width="0.5px" class="city"></circle>
+	
+		<circle id="Circle_32_" fill="#1e8346" stroke="#b6b6bf" stroke-width="0.5" stroke-miterlimit="10" cx="431.68" cy="354.803" r="43.474" opacity="0.001"></circle>
+<circle cx="432.003" cy="354.101" r="13" fill="#1e8346" opacity="0.001" class="city2" stroke="#b6b6bf" stroke-width="0.5"></circle></g>
+<g id="CITY_INDIANAPOLIS" class="q" data-qText="Indianapolis" data-qImg="null" data-wikipediaLink="" onclick="checkQuestion(this, evt)">
+	
+		<rect id="rect12_22_" x="576.03" y="232.012" opacity="0" fill="#FFFFFF" stroke="#010202" stroke-miterlimit="10" enable-background="new    " width="73.17"
+												height="17.149" visibility="hidden"></rect>
+	<circle id="CITY_22_" opacity="1" fill="#FFFFFF" enable-background="new    " cx="612.615" cy="257.272" r="7" stroke="#000000" stroke-width="0.5px" class="city"></circle>
+	
+		<circle id="Circle_22_" fill="#1e8346" stroke="#b6b6bf" stroke-width="0.5" stroke-miterlimit="10" cx="612.292" cy="257.974" r="28.058" opacity="0.001"></circle>
+<circle cx="612.615" cy="257.272" r="13" fill="#1e8346" opacity="0.001" class="city2" stroke="#b6b6bf" stroke-width="0.5"></circle></g>
+<g id="CITY_BOISE" class="q" data-qText="Boise" data-qImg="null" data-wikipediaLink="" onclick="checkQuestion(this, evt)">
+	
+		<rect id="rect12_7_" x="129.182" y="157.622" opacity="0" fill="#FFFFFF" stroke="#010202" stroke-miterlimit="10" enable-background="new    " width="73.17"
+												height="17.149" visibility="hidden"></rect>
+	<circle id="CITY_7_" opacity="1" fill="#FFFFFF" enable-background="new    " cx="165.767" cy="149.107" r="7" stroke="#000000" stroke-width="0.5px" class="city"></circle>
+	
+		<circle id="Circle_7_" fill="#1e8346" stroke="#b6b6bf" stroke-width="0.5" stroke-miterlimit="10" cx="166.189" cy="150.554" r="36.272" opacity="0.001"></circle>
+<circle cx="165.767" cy="149.107" r="13" fill="#1e8346" opacity="0.001" class="city2" stroke="#b6b6bf" stroke-width="0.5"></circle></g>
+<g id="CITY_SALTLAKECITY" class="q" data-qText="Salt Lake City" data-qImg="null" data-wikipediaLink="" onclick="checkQuestion(this, evt)">
+	
+		<rect id="rect12_43_" x="174.13" y="231.409" opacity="0" fill="#FFFFFF" stroke="#010202" stroke-miterlimit="10" enable-background="new    " width="73.17"
+												height="17.149" visibility="hidden"></rect>
+	<circle id="CITY_43_" opacity="1" fill="#FFFFFF" enable-background="new    " cx="210.715" cy="222.894" r="7" stroke="#000000" stroke-width="0.5px" class="city"></circle>
+	
+		<circle id="Circle_43_" fill="#1e8346" stroke="#b6b6bf" stroke-width="0.5" stroke-miterlimit="10" cx="212.003" cy="249.649" r="48.206" opacity="0.001"></circle>
+<circle cx="210.715" cy="222.894" r="13" fill="#1e8346" opacity="0.001" class="city2" stroke="#b6b6bf" stroke-width="0.5"></circle></g>
+<g id="CITY_HELENA" class="q" data-qText="Helena" data-qImg="null" data-wikipediaLink="" hint-index="2" data-errors="2" onclick="checkQuestion(this, evt)">
+	
+		<rect id="rect12_21_" x="202.511" y="114.189" opacity="0" fill="#FFFFFF" stroke="#010202" stroke-miterlimit="10" enable-background="new    " width="73.17"
+												height="17.149" visibility="hidden"></rect>
+	<circle id="CITY_21_" opacity="1" fill="#FFFFFF" enable-background="new    " cx="239.096" cy="105.674" r="7" stroke="#000000" stroke-width="0.5px" class="city"></circle>
+	
+		<circle id="Circle_21_" fill="#1e8346" stroke="#b6b6bf" stroke-width="0.5" stroke-miterlimit="10" cx="238.773" cy="106.376" r="45.941" opacity="0.001"></circle>
+	
+		<circle id="Circle_59_" fill="#1e8346" stroke="#b6b6bf" stroke-width="0.5" stroke-miterlimit="10" cx="294.591" cy="102.14" r="37.935" opacity="0.001"></circle>
+<circle cx="239.096" cy="105.674" r="13" fill="#1e8346" opacity="0.001" class="city2" stroke="#b6b6bf" stroke-width="0.5"></circle></g>
+<g id="CITY_OLYMPIA" class="q" data-qText="Olympia" data-qImg="null" data-wikipediaLink="" onclick="checkQuestion(this, evt)">
+	
+		<rect id="rect12_33_" x="51.288" y="65.635" opacity="0" fill="#FFFFFF" stroke="#010202" stroke-miterlimit="10" enable-background="new    " width="73.17"
+												height="17.149" visibility="hidden"></rect>
+	<circle id="CITY_33_" opacity="1" fill="#FFFFFF" enable-background="new    " cx="87.873" cy="57.12" r="7" stroke="#000000" stroke-width="0.5px" class="city"></circle>
+	
+		<circle id="Circle_33_" fill="#1e8346" stroke="#b6b6bf" stroke-width="0.5" stroke-miterlimit="10" cx="87.55" cy="51.822" r="28.058" opacity="0.001"></circle>
+	
+		<circle id="Circle_60_" fill="#1e8346" stroke="#b6b6bf" stroke-width="0.5" stroke-miterlimit="10" cx="135.238" cy="63.356" r="28.058" opacity="0.001"></circle>
+<circle cx="87.873" cy="57.12" r="13" fill="#1e8346" opacity="0.001" class="city2" stroke="#b6b6bf" stroke-width="0.5"></circle></g>
+<g id="CITY_SALEM" class="q" data-qText="Salem" data-qImg="null" data-wikipediaLink="" onclick="checkQuestion(this, evt)">
+	
+		<rect id="rect12_41_" x="33.631" y="107.638" opacity="0" fill="#FFFFFF" stroke="#010202" stroke-miterlimit="10" enable-background="new    " width="73.17"
+												height="17.149" visibility="hidden"></rect>
+	<circle id="CITY_41_" opacity="1" fill="#FFFFFF" enable-background="new    " cx="70.216" cy="99.123" r="7" stroke="#000000" stroke-width="0.5px" class="city"></circle>
+	
+		<circle id="Circle_41_" fill="#1e8346" stroke="#b6b6bf" stroke-width="0.5" stroke-miterlimit="10" cx="84.448" cy="119.381" r="42.613" opacity="0.001"></circle>
+<circle cx="70.216" cy="99.123" r="13" fill="#1e8346" opacity="0.001" class="city2" stroke="#b6b6bf" stroke-width="0.5"></circle></g>
+<g id="CITY_CARSONCITY" class="q flashing" data-qText="Carson City" data-qImg="null" data-wikipediaLink="" onclick="checkQuestion(this, evt)">
+	
+		<rect id="rect12_9_" x="55.689" y="207.722" opacity="0" fill="#FFFFFF" stroke="#010202" stroke-miterlimit="10" enable-background="new    " width="73.17"
+												height="17.149" visibility="hidden"></rect>
+	<circle id="CITY_9_" opacity="1" fill="#bf4140" enable-background="new    " cx="92.597" cy="233.014" r="7" stroke="#000000" stroke-width="0.5px" class="city"></circle>
+	
+		<circle id="Circle_9_" fill="#bf4140" stroke="#b6b6bf" stroke-width="0.5" stroke-miterlimit="10" cx="115.608" cy="219.634" r="39.374" opacity="0.001"></circle>
+<circle cx="92.597" cy="233.014" r="13" fill="#bf4140" opacity="0.001" class="city2" stroke="#b6b6bf" stroke-width="0.5"></circle></g>
+<g id="CITY_SACRAMENTO" class="q" data-qText="Sacramento" data-qImg="null" data-wikipediaLink="" onclick="checkQuestion(this, evt)">
+	
+		<rect id="rect12_39_" x="22.907" y="266.491" opacity="0" fill="#FFFFFF" stroke="#010202" stroke-miterlimit="10" enable-background="new    " width="73.17"
+												height="17.149" visibility="hidden"></rect>
+	<circle id="CITY_39_" opacity="1" fill="#FFFFFF" enable-background="new    " cx="59.492" cy="257.976" r="7" stroke="#000000" stroke-width="0.5px" class="city"></circle>
+	
+		<circle id="Circle_39_" fill="#1e8346" stroke="#b6b6bf" stroke-width="0.5" stroke-miterlimit="10" cx="53.423" cy="272.931" r="41.312" opacity="0.001"></circle>
+	
+		<circle id="Circle_54_" fill="#1e8346" stroke="#b6b6bf" stroke-width="0.5" stroke-miterlimit="10" cx="99.457" cy="338.415" r="41.312" opacity="0.001"></circle>
+<circle cx="59.492" cy="257.976" r="13" fill="#1e8346" opacity="0.001" class="city2" stroke="#b6b6bf" stroke-width="0.5"></circle></g>
+<g id="CITY_PHOENIX" class="q" data-qText="Phoenix" data-qImg="null" data-wikipediaLink="" onclick="checkQuestion(this, evt)">
+	
+		<rect id="rect12_34_" x="149.208" y="386.623" opacity="0" fill="#FFFFFF" stroke="#010202" stroke-miterlimit="10" enable-background="new    " width="73.17"
+												height="17.149" visibility="hidden"></rect>
+	<circle id="CITY_34_" opacity="1" fill="#FFFFFF" enable-background="new    " cx="185.793" cy="378.108" r="7" stroke="#000000" stroke-width="0.5px" class="city"></circle>
+	
+		<circle id="Circle_34_" fill="#1e8346" stroke="#b6b6bf" stroke-width="0.5" stroke-miterlimit="10" cx="185.47" cy="378.81" r="54.978" opacity="0.001"></circle>
+<circle cx="185.793" cy="378.108" r="13" fill="#1e8346" opacity="0.001" class="city2" stroke="#b6b6bf" stroke-width="0.5"></circle></g>
+<g id="CITY_SANTAFE" class="q" data-qText="Santa Fe" data-qImg="null" data-wikipediaLink="" hint-index="3" data-errors="3" onclick="checkQuestion(this, evt)">
+	
+		<rect id="rect12_44_" x="254.933" y="359.98" opacity="0" fill="#FFFFFF" stroke="#010202" stroke-miterlimit="10" enable-background="new    " width="73.17"
+												height="17.149" visibility="hidden"></rect>
+	<circle id="CITY_44_" opacity="1" fill="#FFFFFF" enable-background="new    " cx="291.518" cy="350.05" r="7" stroke="#000000" stroke-width="0.5px" class="city"></circle>
+	
+		<circle id="Circle_44_" fill="#1e8346" stroke="#b6b6bf" stroke-width="0.5" stroke-miterlimit="10" cx="282.195" cy="350.752" r="43.754" opacity="0.001"></circle>
+<circle cx="291.518" cy="350.05" r="13" fill="#1e8346" opacity="0.001" class="city2" stroke="#b6b6bf" stroke-width="0.5"></circle></g>
+<g id="CITY_CHARLESTONWV" class="q" data-qText="Charleston" data-qImg="null" data-wikipediaLink="" onclick="checkQuestion(this, evt)">
+	
+		<rect id="rect12_10_" x="663.745" y="291.274" opacity="0" fill="#FFFFFF" stroke="#010202" stroke-miterlimit="10" enable-background="new    " width="73.17"
+												height="17.149" visibility="hidden"></rect>
+	<circle id="CITY_10_" opacity="1" fill="#FFFFFF" enable-background="new    " cx="690.331" cy="282.759" r="7" stroke="#000000" stroke-width="0.5px" class="city"></circle>
+	
+		<circle id="Circle_10_" fill="#1e8346" stroke="#b6b6bf" stroke-width="0.5" stroke-miterlimit="10" cx="693.438" cy="286.891" r="24.628" opacity="0.001"></circle>
+<circle cx="690.331" cy="282.759" r="13" fill="#1e8346" opacity="0.001" class="city2" stroke="#b6b6bf" stroke-width="0.5"></circle></g>
+<g id="CITY_FRANKFORT" class="q" data-qText="Frankfort" data-qImg="null" data-wikipediaLink="" onclick="checkQuestion(this, evt)">
+	
+		<rect id="rect12_18_" x="591.135" y="302.251" opacity="0" fill="#FFFFFF" stroke="#010202" stroke-miterlimit="10" enable-background="new    " width="73.17"
+												height="17.149" visibility="hidden"></rect>
+	<circle id="CITY_18_" opacity="1" fill="#FFFFFF" enable-background="new    " cx="639.721" cy="293.736" r="7" stroke="#000000" stroke-width="0.5px" class="city"></circle>
+	
+		<circle id="Circle_18_" fill="#1e8346" stroke="#b6b6bf" stroke-width="0.5" stroke-miterlimit="10" cx="639.398" cy="294.438" r="28.058" opacity="0.001"></circle>
+<circle cx="639.721" cy="293.736" r="13" fill="#1e8346" opacity="0.001" class="city2" stroke="#b6b6bf" stroke-width="0.5"></circle></g>
+<g id="CITY_CHEYENNE" class="q" data-qText="Cheyenne" data-qImg="null" data-wikipediaLink="" onclick="checkQuestion(this, evt)">
+	
+		<rect id="rect12_11_" x="282.841" y="237.065" opacity="0" fill="#FFFFFF" stroke="#010202" stroke-miterlimit="10" enable-background="new    " width="73.17"
+												height="17.055" visibility="hidden"></rect>
+	<circle id="CITY_11_" opacity="1" fill="#FFFFFF" enable-background="new    " cx="319.426" cy="228.596" r="7" stroke="#000000" stroke-width="0.5px" class="city"></circle>
+	
+		<circle id="Circle_11_" fill="#1e8346" stroke="#b6b6bf" stroke-width="0.5" stroke-miterlimit="10" cx="313.602" cy="216.321" r="34.436" opacity="0.001"></circle>
+	
+		<circle id="Circle_51_" fill="#1e8346" stroke="#b6b6bf" stroke-width="0.5" stroke-miterlimit="10" cx="284.4" cy="185.235" r="34.436" opacity="0.001"></circle>
+<circle cx="319.426" cy="228.596" r="13" fill="#1e8346" opacity="0.001" class="city2" stroke="#b6b6bf" stroke-width="0.5"></circle></g>
+<g id="CITY_DENVER" class="q" data-qText="Denver" data-qImg="null" data-wikipediaLink="" onclick="checkQuestion(this, evt)">
+	
+		<rect id="rect12_15_" x="282.518" y="275.016" opacity="0" fill="#FFFFFF" stroke="#010202" stroke-miterlimit="10" enable-background="new    " width="73.17"
+												height="17.149" visibility="hidden"></rect>
+	<circle id="CITY_15_" opacity="1" fill="#FFFFFF" enable-background="new    " cx="319.103" cy="266.502" r="7" stroke="#000000" stroke-width="0.5px" class="city"></circle>
+	
+		<circle id="Circle_15_" fill="#1e8346" stroke="#b6b6bf" stroke-width="0.5" stroke-miterlimit="10" cx="328.411" cy="275.811" r="29.481" opacity="0.001"></circle>
+<circle cx="319.103" cy="266.502" r="13" fill="#1e8346" opacity="0.001" class="city2" stroke="#b6b6bf" stroke-width="0.5"></circle></g>
+<g id="CITY_COLUMBIA" class="q" data-qText="Columbia" data-qImg="null" data-wikipediaLink="" onclick="checkQuestion(this, evt)">
+	
+		<rect id="rect12_12_" x="676.306" y="377.771" opacity="0" fill="#FFFFFF" stroke="#010202" stroke-miterlimit="10" enable-background="new    " width="73.17"
+												height="17.149" visibility="hidden"></rect>
+	<circle id="CITY_12_" opacity="1" fill="#FFFFFF" enable-background="new    " cx="712.891" cy="369.256" r="7" stroke="#000000" stroke-width="0.5px" class="city"></circle>
+	
+		<circle id="Circle_12_" fill="#1e8346" stroke="#b6b6bf" stroke-width="0.5" stroke-miterlimit="10" cx="712.568" cy="369.958" r="28.058" opacity="0.001"></circle>
+<circle cx="712.891" cy="369.256" r="13" fill="#1e8346" opacity="0.001" class="city2" stroke="#b6b6bf" stroke-width="0.5"></circle></g>
+<g id="CITY_RALEIGH" class="q" data-qText="Raleigh" data-qImg="null" data-wikipediaLink="" hint-index="3" data-errors="3" onclick="checkQuestion(this, evt)">
+	
+		<rect id="rect12_37_" x="712.891" y="335.72" opacity="0" fill="#FFFFFF" stroke="#010202" stroke-miterlimit="10" enable-background="new    " width="73.17"
+												height="17.149" visibility="hidden"></rect>
+	<circle id="CITY_37_" opacity="1" fill="#FFFFFF" enable-background="new    " cx="749.476" cy="327.205" r="7" stroke="#000000" stroke-width="0.5px" class="city"></circle>
+	
+		<circle id="Circle_37_" fill="#1e8346" stroke="#b6b6bf" stroke-width="0.5" stroke-miterlimit="10" cx="751.511" cy="330.265" r="30.416" opacity="0.001"></circle>
+<circle cx="749.476" cy="327.205" r="13" fill="#1e8346" opacity="0.001" class="city2" stroke="#b6b6bf" stroke-width="0.5"></circle></g>
+<g id="CITY_RICHMOND" class="q" data-qText="Richmond" data-qImg="null" data-wikipediaLink="" onclick="checkQuestion(this, evt)">
+	
+		<rect id="rect12_38_" x="762.739" y="279.329" opacity="0" fill="#FFFFFF" stroke="#010202" stroke-miterlimit="10" enable-background="new    " width="73.17"
+												height="17.149" visibility="hidden"></rect>
+	<circle id="CITY_38_" opacity="1" fill="#FFFFFF" enable-background="new    " cx="755.299" cy="286.189" r="7" stroke="#000000" stroke-width="0.5px" class="city"></circle>
+	
+		<circle id="Circle_38_" fill="#1e8346" stroke="#b6b6bf" stroke-width="0.5" stroke-miterlimit="10" cx="755.51" cy="288.345" r="10.899" opacity="0.001"></circle>
+<circle cx="755.299" cy="286.189" r="13" fill="#1e8346" opacity="0.001" class="city2" stroke="#b6b6bf" stroke-width="0.5"></circle></g>
+<g id="CITY_WASHINGTONDC" class="q" data-qText="Washington DC" data-qImg="null" data-wikipediaLink="" onclick="checkQuestion(this, evt)">
+	<line fill="#1e8346" stroke="#010202" stroke-miterlimit="10" x1="838.116" y1="267.431" x2="754.444" y2="261.307" opacity="0"></line>
+	
+		<rect id="rect12_49_" x="798.433" y="258.856" opacity="0" fill="#FFFFFF" stroke="#010202" stroke-miterlimit="10" enable-background="new    " width="77.152"
+												height="17.149" visibility="hidden"></rect>
+	<circle id="CITY_49_" opacity="1" fill="#FFFFFF" enable-background="new    " cx="753.627" cy="260.571" r="7" stroke="#000000" stroke-width="0.5px" class="city"></circle>
+	
+		<circle id="Circle_49_" fill="#1e8346" stroke="#b6b6bf" stroke-width="0.5" stroke-miterlimit="10" cx="758.183" cy="264.431" r="11.437" opacity="0.001"></circle>
+	
+		<circle id="Circle_3_" fill="#1e8346" stroke="#b6b6bf" stroke-width="0.5" stroke-miterlimit="10" cx="743.481" cy="261.307" r="15.198" opacity="0.001"></circle>
+<circle cx="753.627" cy="260.571" r="13" fill="#1e8346" opacity="0.001" class="city2" stroke="#b6b6bf" stroke-width="0.5"></circle></g>
+<g id="CITY_COLUMBUS" class="q" data-qText="Columbus" data-qImg="null" data-wikipediaLink="" onclick="checkQuestion(this, evt)">
+	
+		<rect id="rect12_13_" x="624.814" y="258.629" opacity="0" fill="#FFFFFF" stroke="#010202" stroke-miterlimit="10" enable-background="new    " width="73.17"
+												height="17.149" visibility="hidden"></rect>
+	<circle id="CITY_13_" opacity="1" fill="#FFFFFF" enable-background="new    " cx="661.4" cy="250.114" r="7" stroke="#000000" stroke-width="0.5px" class="city"></circle>
+	
+		<circle id="Circle_13_" fill="#1e8346" stroke="#b6b6bf" stroke-width="0.5" stroke-miterlimit="10" cx="661.077" cy="250.816" r="28.058" opacity="0.001"></circle>
+<circle cx="661.4" cy="250.114" r="13" fill="#1e8346" opacity="0.001" class="city2" stroke="#b6b6bf" stroke-width="0.5"></circle></g>
+<g id="CITY_LANSING" class="q" data-qText="Lansing" data-qImg="null" data-wikipediaLink="" onclick="checkQuestion(this, evt)">
+	
+		<rect id="rect12_25_" x="594.363" y="203.496" opacity="0" fill="#FFFFFF" stroke="#010202" stroke-miterlimit="10" enable-background="new    " width="73.17"
+												height="17.149" visibility="hidden"></rect>
+	<circle id="CITY_25_" opacity="1" fill="#FFFFFF" enable-background="new    " cx="630.948" cy="194.981" r="7" stroke="#000000" stroke-width="0.5px" class="city"></circle>
+	
+		<circle id="Circle_25_" fill="#1e8346" stroke="#b6b6bf" stroke-width="0.5" stroke-miterlimit="10" cx="630.625" cy="195.683" r="28.058" opacity="0.001"></circle>
+<circle cx="630.948" cy="194.981" r="13" fill="#1e8346" opacity="0.001" class="city2" stroke="#b6b6bf" stroke-width="0.5"></circle></g>
+<g id="CITY_MADISON" class="q" data-qText="Madison" data-qImg="null" data-wikipediaLink="" onclick="checkQuestion(this, evt)">
+	
+		<rect id="rect12_28_" x="519.542" y="199.389" opacity="0" fill="#FFFFFF" stroke="#010202" stroke-miterlimit="10" enable-background="new    " width="73.17"
+												height="17.149" visibility="hidden"></rect>
+	<circle id="CITY_28_" opacity="1" fill="#FFFFFF" enable-background="new    " cx="556.127" cy="190.874" r="7" stroke="#000000" stroke-width="0.5px" class="city"></circle>
+	
+		<circle id="Circle_28_" fill="#1e8346" stroke="#b6b6bf" stroke-width="0.5" stroke-miterlimit="10" cx="555.804" cy="191.576" r="28.058" opacity="0.001"></circle>
+	
+		<circle id="Circle_55_" fill="#1e8346" stroke="#b6b6bf" stroke-width="0.5" stroke-miterlimit="10" cx="556.127" cy="147.212" r="28.058" opacity="0.001"></circle>
+<circle cx="556.127" cy="190.874" r="13" fill="#1e8346" opacity="0.001" class="city2" stroke="#b6b6bf" stroke-width="0.5"></circle></g>
+<g id="CITY_SAINTPAUL" class="q" data-qText="Saint Paul" data-qImg="null" data-wikipediaLink="" onclick="checkQuestion(this, evt)">
+	
+		<rect id="rect12_40_" x="457.659" y="179.067" opacity="0" fill="#FFFFFF" stroke="#010202" stroke-miterlimit="10" enable-background="new    " width="46.693"
+												height="17" visibility="hidden"></rect>
+	<circle id="CITY_40_" opacity="1" fill="#FFFFFF" enable-background="new    " cx="480.561" cy="169.978" r="7" stroke="#000000" stroke-width="0.5px" class="city"></circle>
+	
+		<circle id="Circle_40_" fill="#1e8346" stroke="#b6b6bf" stroke-width="0.5" stroke-miterlimit="10" cx="485.234" cy="156.529" r="31.802" opacity="0.001"></circle>
+	
+		<circle id="Circle_56_" fill="#1e8346" stroke="#b6b6bf" stroke-width="0.5" stroke-miterlimit="10" cx="481.794" cy="107.434" r="35.472" opacity="0.001"></circle>
+<circle cx="480.561" cy="169.978" r="13" fill="#1e8346" opacity="0.001" class="city2" stroke="#b6b6bf" stroke-width="0.5"></circle></g>
+<g id="CITY_BOSTON" class="q" data-qText="Boston" data-qImg="null" data-wikipediaLink="" onclick="checkQuestion(this, evt)">
+	<line fill="#1e8346" stroke="#010202" stroke-miterlimit="10" x1="836.472" y1="163.371" x2="873.671" y2="163.371" opacity="0"></line>
+	
+		<rect id="rect12_8_" x="842.739" y="154.797" opacity="0" fill="#FFFFFF" stroke="#010202" stroke-miterlimit="10" enable-background="new    " width="57.33"
+												height="17.149" visibility="hidden"></rect>
+	<circle id="CITY_8_" opacity="1" fill="#FFFFFF" enable-background="new    " cx="834.86" cy="163.568" r="7" stroke="#000000" stroke-width="0.5px" class="city"></circle>
+	
+		<circle id="Circle_8_" fill="#1e8346" stroke="#b6b6bf" stroke-width="0.5" stroke-miterlimit="10" cx="839.311" cy="161.188" r="13.976" opacity="0.001"></circle>
+<circle cx="834.86" cy="163.568" r="13" fill="#1e8346" opacity="0.001" class="city2" stroke="#b6b6bf" stroke-width="0.5"></circle></g>
+<g id="CITY_PROVIDENCE" class="q" data-qText="Providence" data-qImg="null" data-wikipediaLink="" onclick="checkQuestion(this, evt)">
+	
+		<rect id="rect12_36_" x="839.135" y="172.599" opacity="0" fill="#FFFFFF" stroke="#010202" stroke-miterlimit="10" enable-background="new    " width="73.17"
+												height="17.149" visibility="hidden"></rect>
+	<circle id="CITY_36_" opacity="1" fill="#FFFFFF" enable-background="new    " cx="831.256" cy="182.37" r="7" stroke="#000000" stroke-width="0.5px" class="city"></circle>
+	
+		<circle id="Circle_36_" fill="#1e8346" stroke="#b6b6bf" stroke-width="0.5" stroke-miterlimit="10" cx="837.009" cy="188.908" r="16.366" opacity="0.001"></circle>
+<circle cx="831.256" cy="182.37" r="13" fill="#1e8346" opacity="0.001" class="city2" stroke="#b6b6bf" stroke-width="0.5"></circle></g>
+<g id="CITY_HARTFORD" class="q" data-qText="Hartford" data-qImg="null" data-wikipediaLink="" onclick="checkQuestion(this, evt)">
+	
+		<rect id="rect12_20_" x="791.402" y="190.366" opacity="0" fill="#FFFFFF" stroke="#010202" stroke-miterlimit="10" enable-background="new    " width="73.17"
+												height="17.149" visibility="hidden"></rect>
+	<circle id="CITY_20_" opacity="1" fill="#FFFFFF" enable-background="new    " cx="812.803" cy="182.198" r="7" stroke="#000000" stroke-width="0.5px" class="city"></circle>
+	
+		<circle id="Circle_20_" fill="#1e8346" stroke="#b6b6bf" stroke-width="0.5" stroke-miterlimit="10" cx="807.084" cy="185.648" r="15.806" opacity="0.001"></circle>
+<circle cx="812.803" cy="182.198" r="13" fill="#1e8346" opacity="0.001" class="city2" stroke="#b6b6bf" stroke-width="0.5"></circle></g>
+<g id="CITY_CONCORD" class="q" data-qText="Concord" data-qImg="null" data-wikipediaLink="" onclick="checkQuestion(this, evt)">
+	
+		<rect id="rect12_14_" x="828.295" y="136.637" opacity="0" fill="#FFFFFF" stroke="#010202" stroke-miterlimit="10" enable-background="new    " width="73.17"
+												height="17.149" visibility="hidden"></rect>
+	<circle id="CITY_14_" opacity="1" fill="#FFFFFF" enable-background="new    " cx="821.128" cy="147.37" r="7" stroke="#000000" stroke-width="0.5px" class="city"></circle>
+	
+		<circle id="Circle_14_" fill="#1e8346" stroke="#b6b6bf" stroke-width="0.5" stroke-miterlimit="10" cx="819.157" cy="144.567" r="15.706" opacity="0.001"></circle>
+<circle cx="821.128" cy="147.37" r="13" fill="#1e8346" opacity="0.001" class="city2" stroke="#b6b6bf" stroke-width="0.5"></circle></g>
+<line fill="none" stroke="#010202" stroke-miterlimit="10" x1="-2.114" y1="467.405" x2="238.587" y2="467.405"></line>
+<line fill="none" stroke="#010202" stroke-miterlimit="10" x1="222.378" y1="467.405" x2="222.378" y2="693.003"></line>
+<line fill="none" stroke="#010202" stroke-miterlimit="10" x1="238.587" y1="467.405" x2="457.185" y2="686.003"></line>
+<g id="CITY_HONOLULU" class="q" data-qText="Honolulu" data-qImg="null" data-wikipediaLink="" onclick="checkQuestion(this, evt)">
+	
+		<rect id="rect12_3_" x="236.777" y="565.259" opacity="0" fill="#FFFFFF" stroke="#010202" stroke-miterlimit="10" enable-background="new    " width="73.17"
+												height="17.149" visibility="hidden"></rect>
+	<circle id="CITY_3_" opacity="1" fill="#FFFFFF" enable-background="new    " cx="273.362" cy="556.744" r="7" stroke="#000000" stroke-width="0.5px" class="city"></circle>
+	
+		<circle id="Circle_61_" fill="#1e8346" stroke="#b6b6bf" stroke-width="0.5" stroke-miterlimit="10" cx="282.613" cy="567.019" r="53.047" opacity="0.001"></circle>
+<circle cx="273.362" cy="556.744" r="13" fill="#1e8346" opacity="0.001" class="city2" stroke="#b6b6bf" stroke-width="0.5"></circle></g>
+<g id="CITY_JUNEAU" class="q" data-qText="Juneau" data-qImg="null" data-wikipediaLink="" onclick="checkQuestion(this, evt)">
+	
+		<rect id="rect12_51_" x="145.209" y="584.04" opacity="0" fill="#FFFFFF" stroke="#010202" stroke-miterlimit="10" enable-background="new    " width="73.17"
+												height="17.149" visibility="hidden"></rect>
+	<circle id="CITY_51_" opacity="1" fill="#FFFFFF" enable-background="new    " cx="181.794" cy="575.525" r="7" stroke="#000000" stroke-width="0.5px" class="city"></circle>
+	
+		<circle id="Circle_62_" fill="#1e8346" stroke="#b6b6bf" stroke-width="0.5" stroke-miterlimit="10" cx="137.31" cy="551.828" r="77.924" opacity="0.001"></circle>
+<circle cx="181.794" cy="575.525" r="13" fill="#1e8346" opacity="0.001" class="city2" stroke="#b6b6bf" stroke-width="0.5"></circle></g>
+</svg>
+									</div>
+
+									<div id="completion" style="width: 500px; left: 245.203px; top: 25px;">
+										<div id="lblFinalScore">Bravo ! Ton score: 24% 12:46</div>
+										<br> <br>
+										<div id="lblTellFriends">Partage ton score avec tes amis!</div>
+										<br> <br>
+
+										<div style="text-align: center; margin-top: 35px;">
+
+											<br> <br> <input id="btnComplete" type="button" value="OK" style="width: 250px; height: 40px" onclick="hideCompletion()">
+										</div>
+
+									</div>
+
+
+								</div>
+							</div>
+							<div id="gameModeWrapper" style="padding-left: 20px;">
+								<select name="drpGameMode" id="drpGameMode" onchange="javascript:setGameMode();">
+									<option value="learn">Mode : découvrir et acquérir</option>
+									<option selected="selected" value="pin">Mode : repérer</option>
+									<option value="dragDrop">Mode : étiqueter</option>
+									<option value="prompt">Mode : écrire</option>
+
+								</select>
+
+
+								<div style="clear: both"></div>
+							</div>
+
+
+							<div id="optionsRight">
+
+
+								<span> <input id="cbSoundOn" type="checkbox" name="cbSoundOn" checked="checked"><label for="cbSoundOn">Son activé</label>
+								</span> &nbsp; <span> </span> <span>&nbsp;&nbsp; <a onclick="setGameMode(&#39;pin&#39;);return false" style="cursor: pointer;">Recommencer</a>
+
+								</span>
+
+
+
+
+
+
+								<div id="pnlRestart"></div>
+
+							</div>
+							<div id="pnlInfo"></div>
+
+
+						</div>
+
+					</div>
+				</div>
+				<div id="rtcol">
+					<div id="sidebar">
+						<div id="sidebar-top"></div>
+						<div id="sidebar-center">
+
+							<div>
+
+
+								<div id="divrt" style="width: 100%">
+									<div id="adwords1_Panel1">
+										<br> <br>
+										<!-- Seterra vertical banner 2 responsive -->
+										<br> <br>
+
+
+									</div>
+
+
+
+								</div>
+
+
+							</div>
+
+						</div>
+
+						<div id="sidebar-bottom"></div>
+
+					</div>
+
+				</div>
+
+
+				<div style="clear: both;"></div>
+
+			</div>
+
+
+			<span id="lblDebug"></span>
+
+		</div>
+
+
+
+
+		<script type="text/javascript">
+//<![CDATA[
+initGame()
+theForm.oldSubmit = theForm.submit;
+theForm.submit = WebForm_SaveScrollPositionSubmit;
+
+theForm.oldOnSubmit = theForm.onsubmit;
+theForm.onsubmit = WebForm_SaveScrollPositionOnSubmit;
+//]]>
+</script>
+	</form>
+
+
+
+
+	<table cellspacing="0" cellpadding="0" class="gstl_50 gssb_c" style="width: 182px; display: none; top: 107px; position: absolute; left: 855px;">
+		<tbody>
+			<tr>
+				<td class="gssb_f"></td>
+				<td class="gssb_e" style="width: 100%;"></td>
+			</tr>
+		</tbody>
+	</table>
+	<div id="promptInputForm" class="prompt-input-form" style="left: 1132.47px; top: 1089.65px; display: none;">
+		<input type="text" id="inpCountry" onkeyup="handleArrowKeys()" style="color: rgb(0, 0, 0);"><input id="btnSubmitAnswer" type="button"
+			value="Envoyer la réponse" onclick="checkPromptAnswer()"><input id="btnSkip" type="button" value="Passer" onclick="skipQuestion()"><input
+			type="button" id="btnHint" value="Donnez-moi un indice !" onclick="getHint()">
+		<div id="hints" style="display: none;"></div>
+	</div>
+<a id="saver_json" target="_blank" download="file.txt" style="display: none;">Download</a>
+<div style="display:block; position:absolute; top: 0px; right: 0px; bottom: 0px; font-size: small;"><pre id="fc_bilan"></pre></div>
+</body>
+</html>
